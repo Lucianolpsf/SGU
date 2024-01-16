@@ -1,0 +1,241 @@
+﻿@model IEnumerable<SGC.Models.ClienteVM>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/SGU.styles.css" asp-append-version="true" />
+<link href="~/Tema/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- ... (código HTML existente) ... -->
+
+<section id="services" class="services">
+    <div class="container">
+        <h1 class="section-title" style="padding: 80px; max-height:20px;">Lista de Clientes</h1>
+        <div class="custom_container">
+            <table class="table table-sm table-striped ">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Telefone</th>
+                        <th>Editar</th>
+                        <th>Excluir</th>
+
+                        <th scope="col"></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+
+                        <tr id=item.id>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.Nome</td>
+                            <td>@item.Email</td>
+                            <td>@item.Telefone</td>
+                            <td class="text-center ">
+                                <button class="btn btn-default" onclick="definirEdt('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone')" data-bs-toggle="modal" data-bs-target="#EditarUsuario">
+
+                                    <i class="fa fa-edit"></i>   <!--Linha para adicionar o icone-->
+                                </button>
+                            </td>
+                            <td class="text-center ">
+                                <button class="btn btn-default" onclick="definirExc('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone')" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario">
+                                    <i class="fa fa-trash text-danger"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome">Nome</label>
+                            <input id="EditNome" type="text" class="form-control" readonly> <!--Campo somente de leitura com o readonly-->
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input id="EditEmail" type="email" class="form-control" >
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input id="EditTel" type="text" class="form-control" >
+
+                        </div>
+                        <input type="hidden" id="IdEdt" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="AlterarCliente()">Salvar</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ExcluirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                         <div class="mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="ExcNome" class="form-control" placeholder="Digite seu nome..." readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="ExcEmail" class="form-control" placeholder="Digite seu email..." readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="ExcTel" class="form-control" placeholder="Digite seu telefone..." readonly>
+
+                        </div>
+                        <input type="hidden" id="IdExc" class="form-control" placeholder="Digite seu nome..." readonly>
+
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" onclick="DeletarCliente()" class="btn btn-primary">Excluir</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ... (código HTML existente) ... -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Tema/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="~/Tema/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Tema/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/Tema/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/Tema/assets/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="~/Tema/assets/js/main.js"></script>
+
+    <script>
+
+        //Funcao para receber os dados do banco
+
+        function definirEdt(id, Nome, Email, Telefone) {
+            $('#IdEdt').val(id);
+            $('#EditNome').val(Nome);
+            $('#EditEmail').val(Email);
+            $('#EditTel').val(Telefone)
+        }
+        function definirExc(id, Nome, Email, Telefone) {
+            $('#IdExc').val(id);
+            $('#ExcNome').val(Nome);
+            $('#ExcEmail').val(Email);
+            $('#ExcTel').val(Telefone)
+        }
+
+        function AlterarCliente() {
+            // Obtenha os valores do formulário
+            var id = $("#IdEdt").val();
+            var nome = $("#EditNome").val();
+            var email = $("#EditEmail").val();
+            var tel = $('#EditTel').val();
+
+            // Verifique se os campos estão preenchidos
+            if (!id || !nome || !email || !tel) {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            // Crie um objeto com os dados
+            var dados = {
+                Id: id,
+                Nome: nome,
+                Email: email,
+                Telefone: tel
+            };
+
+            // Faça a chamada AJAX para o servidor
+            $.ajax({
+                type: "POST",
+                url: "/Clientes/AlterarCliente", // Substitua "Cliente" pelo nome do seu controller
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(dados),
+                success: function (response) {
+                    // Manipule a resposta do servidor
+                    if (response.success) {
+                        alert("Cliente alterado com sucesso!");
+                        // Feche o modal de edição se necessário
+                        $('#FormEditar').modal('hide');
+                        // Recarregue a página se necessário
+                        location.reload();
+                    } else {
+                        alert("Falha ao alterar cliente.");
+                    }
+                },
+                error: function (error) {
+                    // Manipule erros de requisição AJAX
+                    console.error("Erro na chamada AJAX:", error);
+                }
+            });
+        }
+
+        function DeletarCliente() {
+            // Obtenha o ID do usuário a ser excluído
+            var userId = $('#IdExc').val();
+
+            // Faça uma requisição AJAX
+            $.ajax({
+                type: "POST",
+                url: "/Clientes/DeletarCliente", // Substitua "Usuario" pelo nome do seu controller
+                data: { id: userId },
+                dataType: "json",
+                success: function (response) {
+                    // A resposta do servidor está em response.success
+                    if (response.success) {
+                        // Feche o modal de exclusão
+                        $('#FormExcluir').modal('hide');
+                        alert("Usuário deletado com sucesso!");
+
+                        // Recarregue a página
+                        location.reload();
+                    } else {
+                        alert("Falha ao deletar usuário.");
+                    }
+                },
+                error: function () {
+                    alert("Erro na requisição AJAX.");
+                }
+            });
+        }
+
+    </script>
+</section>

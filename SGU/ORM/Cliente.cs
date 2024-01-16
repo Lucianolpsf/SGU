@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SGC.Models;
+namespace SGU.ORM;
 
-public class ContatoVM
+public partial class Cliente
 {
     public int Id { get; set; }
 

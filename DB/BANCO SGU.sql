@@ -45,4 +45,7 @@ ALTER TABLE Agendamento ADD CONSTRAINT FK_Agendamento_3
     REFERENCES Usuario (ID)
     ON DELETE CASCADE;
 
-select * from Contato
+select * from Usuario
+insert into Usuario (ID, Nome, Email, Senha, Telefone, TipoUsuario) 
+Values
+	(1, 'Gomes', 'karython.unai@gmail.com', 'admin', '61981035447', 'administrador');

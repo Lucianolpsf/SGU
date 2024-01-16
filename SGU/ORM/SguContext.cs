@@ -17,7 +17,7 @@ public partial class SguContext : DbContext
 
     public virtual DbSet<Agendamento> Agendamentos { get; set; }
 
-    public virtual DbSet<Contato> Contatos { get; set; }
+    public virtual DbSet<Cliente> Clientes { get; set; }
 
     public virtual DbSet<Manutencao> Manutencaos { get; set; }
 
@@ -58,11 +58,9 @@ public partial class SguContext : DbContext
                 .HasConstraintName("FK_Agendamento_3");
         });
 
-        modelBuilder.Entity<Contato>(entity =>
+        modelBuilder.Entity<Cliente>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Usuario__3214EC07F6E43641");
-
-            entity.ToTable("Contato");
 
             entity.HasIndex(e => e.Telefone, "UQ__Usuario__4EC504B69B03B9E1").IsUnique();
 

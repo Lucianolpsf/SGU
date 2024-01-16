@@ -565,6 +565,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\img\\c1.png",
+      "PackagePath": "staticwebassets\\img\\c1.png"
+    },
+    {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\img\\c2.png",
+      "PackagePath": "staticwebassets\\img\\c2.png"
+    },
+    {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\img\\c3.png",
+      "PackagePath": "staticwebassets\\img\\c3.png"
+    },
+    {
       "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

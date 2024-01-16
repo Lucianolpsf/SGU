@@ -1,5 +1,6 @@
 select  * from Servico
-select * from Contato
+
+select * from Clientes
 select * from Usuario
 
 
@@ -48,3 +49,9 @@ Values
 	('Volume Brasileiro', 85)
 	,('Volume 5D', 100)
 	,('Efeito Sirena', 60);
+insert Usuario (ID, Nome,Email, Senha, Telefone, TipoUsuario)
+Values
+(2,'karython', 'karython.dev@gmail.com','1234', 61981035447, 'Cliente');
+
+/* renomeando tabela no sql server*/
+EXEC sp_rename 'Contato', 'Cliente';

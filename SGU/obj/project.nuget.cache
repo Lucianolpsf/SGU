@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z8Y2I0G2ymMPbSsObrbVhp3on4iFNBHKn78YNu87aWOx6EplY0ephyqSpMpc1O2SyWlBbWGhw8U/qOW58ly75g==",
+  "dgSpecHash": "Nil63E4RpRDwjBZudlv1rDPqmKOFkmgHQDaSas8bf244jBdD4oN8w8m7UeKBPdAfusMa3oQPRGSeKzaWMcCqdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\SGU.csproj",
   "expectedPackageFiles": [
@@ -45,6 +45,7 @@
     "C:\\Users\\Gomes\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Gomes\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Gomes\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Gomes\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Gomes\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Gomes\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Gomes\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",
