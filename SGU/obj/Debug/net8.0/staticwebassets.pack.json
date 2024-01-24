@@ -57,6 +57,26 @@
       "PackagePath": "staticwebassets\\Tema\\assets\\img\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\gallery\\ga1.jpg",
+      "PackagePath": "staticwebassets\\Tema\\assets\\img\\gallery\\ga1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\gallery\\ga2.jpg",
+      "PackagePath": "staticwebassets\\Tema\\assets\\img\\gallery\\ga2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\gallery\\ga3.jpg",
+      "PackagePath": "staticwebassets\\Tema\\assets\\img\\gallery\\ga3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\gallery\\ga4.jpg",
+      "PackagePath": "staticwebassets\\Tema\\assets\\img\\gallery\\ga4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\gallery\\ga5.jpg",
+      "PackagePath": "staticwebassets\\Tema\\assets\\img\\gallery\\ga5.jpg"
+    },
+    {
       "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\gallery\\gallery-1.jpg",
       "PackagePath": "staticwebassets\\Tema\\assets\\img\\gallery\\gallery-1.jpg"
     },
@@ -89,8 +109,8 @@
       "PackagePath": "staticwebassets\\Tema\\assets\\img\\gallery\\gallery-8.jpg"
     },
     {
-      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\hero-bg.jpg",
-      "PackagePath": "staticwebassets\\Tema\\assets\\img\\hero-bg.jpg"
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\log1.jpg",
+      "PackagePath": "staticwebassets\\Tema\\assets\\img\\log1.jpg"
     },
     {
       "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\Tema\\assets\\img\\testimonials\\testimonials-1.jpg",
@@ -575,6 +595,14 @@
     {
       "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\img\\c3.png",
       "PackagePath": "staticwebassets\\img\\c3.png"
+    },
+    {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\img\\hist1.png",
+      "PackagePath": "staticwebassets\\img\\hist1.png"
+    },
+    {
+      "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\img\\met1.png",
+      "PackagePath": "staticwebassets\\img\\met1.png"
     },
     {
       "Id": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\wwwroot\\js\\site.js",

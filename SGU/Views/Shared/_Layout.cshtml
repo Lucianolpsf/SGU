@@ -27,6 +27,9 @@
     <link href="~/Tema/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="~/Tema/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="~/Tema/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap">
 
 
 
@@ -67,8 +70,12 @@
                         <a class="nav-link text-dark" href="/Home/Index#services">Serviços</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-dark" href="/Home/Index#gallery">Galeria</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-dark" href="/Home/Index#contact">Fale Conosco</a>
                     </li>
+                    <!-- Comando para restringir itens do menu de acordo com usuario-->
                      @if (Context.Session.GetString("UsuarioTipo") == "administrador")
                     {
                         <li class="nav-item">
