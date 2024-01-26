@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\SGU.csproj": {}
+    "C:\\Users\\Administrador\\Desktop\\SGU\\SGU\\SGU.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\SGU.csproj": {
+    "C:\\Users\\Administrador\\Desktop\\SGU\\SGU\\SGU.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\SGU.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\Desktop\\SGU\\SGU\\SGU.csproj",
         "projectName": "SGU",
-        "projectPath": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\SGU.csproj",
-        "packagesPath": "C:\\Users\\Gomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gomes\\source\\repos\\SGU\\SGU\\obj\\",
+        "projectPath": "C:\\Users\\Administrador\\Desktop\\SGU\\SGU\\SGU.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador\\Desktop\\SGU\\SGU\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

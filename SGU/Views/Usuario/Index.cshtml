@@ -1,5 +1,458 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<SGC.Models.UsuarioVM>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/SGU.styles.css" asp-append-version="true" />
+<link href="~/Tema/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="~/Tema/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+<style>
+    .table-sm tbody tr {
+        height: 3px;
+    }
+
+    .error-message {
+        color: #e74c3c; /* Vermelho escuro */
+        margin-top: 5px;
+    }
+
+    .loader-modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+    }
+
+    .loader-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .loader-text {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .loader-image {
+        background-color: transparent;
+    }
+
+
+
+    .table-container {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #ddd;
+        table-layout: fixed;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        position: sticky;
+        top: 0;
+    }
+
+    thead tr {
+        position: sticky;
+        top: 0;
+        background-color: #f2f2f2;
+        z-index: 2; /* Garante que o cabeçalho fique sobre as células ao rolar */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+
+<section id="services" class="services">
+    <div class="container">        
+
+        <div class="add-user-button">
+            <h1 class="section-title" style="padding: 80px; max-height:20px;">Gerenciamento de Clientes</h1>
+            <br />
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group mb-4">
+                        <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Produtos..." aria-label="Filtrar" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
+                    <button class="btn btn-success btn-lg" onclick="" data-bs-toggle="modal" data-bs-target="#InserirUsuario">
+                        <i class="fa fa-plus"></i> Adicionar Cliente
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="TbClientes">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Senha</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Tipo de Usuário</th>
+                        <th style="color: blue; text-align: center;">Editar</th>
+                        <th style="color: red; text-align: center;">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr id="@item.Id">
+                            <td>@item.Id</td>
+                            <td>@item.Nome</td>
+                            <td>@item.Senha</td>
+                            <td>@item.Email</td>
+                            <td>@item.Telefone</td>
+                            <td>@item.TipoUsuario</td>
+                            <td class="text-center">
+                                <button class="btn btn-default" onclick="definirEdt('@item.Id', '@item.Nome', '@item.Email','@item.Senha', '@item.TipoUsuario','@item.Telefone')" data-bs-toggle="modal" data-bs-target="#EditarUsuario">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-default" onclick="definirExc('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone')" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario">
+                                    <i class="fa fa-trash text-danger"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome">Nome</label>
+                            <input id="EditNome" type="text" class="form-control"> <!--Campo somente de leitura com o readonly-->
+                        </div>
+                        <div class="mb-3">
+                            <label for="nome">Senha</label>
+                            <input id="EditSenha" type="text" class="form-control"> <!--Campo somente de leitura com o readonly-->
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input id="EditEmail" type="email" class="form-control" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Tipo de Cliente</label>
+                            @Html.DropDownList("DropTipoUsuarioEdit", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "chosen-select form-control", @style = "width:420px;" })
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input id="EditTel" type="text" class="form-control" >
+
+                        </div>
+                        <input type="hidden" id="IdEdt" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick=" AlterarUsuario()">Salvar</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ExcluirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                         <div class="mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="ExcNome" class="form-control" placeholder="Digite seu nome..." readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="ExcEmail" class="form-control" placeholder="Digite seu email..." readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="ExcTel" class="form-control" placeholder="Digite seu telefone..." readonly>
+
+                        </div>
+                        <input type="hidden" id="IdExc" class="form-control" placeholder="Digite seu nome..." readonly>
+
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" onclick="ExcluirUsuario()" class="btn btn-primary">Excluir</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="InserirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                           <input id="Nome" type="text" class="form-control" placeholder="Digite o nome do cliente"> 
+                        </div>
+
+                        <div class="mb-3">                            
+                            <input id="Senha" type="text" class="form-control" placeholder="Digite o a senha"> 
+                        </div>
+                        <div class="mb-3">
+                            <input id="Email" type="email" class="form-control" placeholder="Digite o email">
+                        </div>
+                        <div class="mb-3">
+                           @Html.DropDownList("DropTipoUsuario", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "chosen-select form-control", @style = "width:420px;" })
+
+                        </div>
+                        <div class="mb-3">
+                            <input id="Telefone" type="text" class="form-control" placeholder="Digite o telefone">
+
+                        </div>
+                        <input type="hidden" id="IdEdt" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="InserirUsuario()">Adicionar</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Tema/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="~/Tema/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Tema/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/Tema/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/Tema/assets/vendor/php-email-form/validate.js"></script>
+    <script src="~/Tema/assets/js/main.js"></script>
+
+    <script>
+
+        function definirEdt(id, Nome, Email, Senha, TipoUsuario, Telefone) {
+            
+            $('#IdEdt').val(id);
+            $('#EditNome').val(Nome);
+            $('#EditSenha').val(Senha);
+            $('#EditEmail').val(Email);
+            $('#EditTel').val(Telefone);
+
+            // Verifica se o campo Senha existe e está sendo preenchido corretamente
+            var senhaValue = "";
+            if (Senha) {
+                $('#EditSenha').val(Senha);
+                senhaValue = Senha;
+            }
+
+            // Verifica se o DropDownList existe e se o valor está presente nas opções
+            // Verifica se o DropDownList existe e se o valor está presente nas opções
+            if ($('#DropTipoUsuarioEdit').length > 0) {
+                // Procura a opção no DropDownList pelo texto
+                $('#DropTipoUsuarioEdit option').filter(function () {
+                    return $(this).text() === TipoUsuario; // Verifica se o texto corresponde ao TipoUsuario
+                }).prop('selected', true); // Seleciona a opção encontrada
+                $('#DropTipoUsuarioEdit').trigger('chosen:updated'); // Atualiza o DropDownList
+            } else {
+                console.error("DropDownList não encontrado.");
+            }           
+        }
+
+        function definirExc(id, Nome, Email, Telefone) {
+            $('#IdExc').val(id);
+            $('#ExcNome').val(Nome);
+            $('#ExcEmail').val(Email);
+            $('#ExcTel').val(Telefone)
+        }
+
+        function InserirUsuario() 
+        {
+            
+            var nome = $('#Nome').val();
+            var email = $('#Email').val();
+            var senha = $('#Senha').val();
+            var telefone = $('#Telefone').val();
+            var tipoUsuario = $('#DropTipoUsuario option:selected').text();
+
+           
+            var dados = {
+                Nome: nome,
+                Email: email,
+                Senha: senha,
+                Telefone: telefone,
+                TipoUsuario: tipoUsuario
+            };
+
+            // Faça a chamada AJAX
+            $.ajax({
+                url: '/Usuario/InserirUsuario',
+                type: "POST",
+                dataType: "json",
+                data: dados,
+                success: function (resultado) {
+                    if (resultado.success) {
+                        alert(resultado.message);  // Exibe a mensagem de sucesso ou erro
+                        if (resultado.success) {
+                            
+                        }
+                    } else 
+                    {
+                        alert(resultado.message);  // Exibe a mensagem de falha
+                    }
+                },
+                error: function () {
+                    alert('Erro na requisição AJAX.');
+                }
+            });
+        }
+
+        function AlterarUsuario() {
+            // Obtenha os valores do formulário
+            var id = $("#IdEdt").val();
+            var nome = $("#EditNome").val();
+            var senha = $("#EditSenha").val();
+            var email = $("#EditEmail").val();
+            var tel = $('#EditTel').val();
+            var tipoCli = $('#DropTipoUsuarioEdit option:selected').text();
+
+            // Verifique se os campos estão preenchidos
+            if (!id || !senha || !nome || !email || !tel || !tipoCli) {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            // Crie um objeto com os dados
+            var dados = {
+                Id: id,
+                Nome: nome,
+                Senha: senha,
+                Email: email,
+                Telefone: tel,
+                TipoUsuario: tipoCli
+            };
+
+            // Faça a chamada AJAX para o servidor
+            $.ajax({
+                type: "POST",
+                url: "/Usuario/AlterarUsuario", // Substitua "Cliente" pelo nome do seu controller
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(dados),
+                success: function (response) {
+                    // Manipule a resposta do servidor
+                    if (response.success) {
+                        alert("Cliente alterado com sucesso!");
+                        // Feche o modal de edição se necessário
+                        $('#FormEditar').modal('hide');
+                        // Recarregue a página se necessário
+                        location.reload();
+                    } else {
+                        alert("Falha ao alterar cliente.");
+                    }
+                },
+                error: function (error) {
+                    // Manipule erros de requisição AJAX
+                    console.error("Erro na chamada AJAX:", error);
+                }
+            });
+        }
+
+        function ExcluirUsuario() {
+            // Obtenha o ID do usuário a ser excluído
+            var userId = $('#IdExc').val();
+
+            // Faça uma requisição AJAX
+            $.ajax({
+                type: "POST",
+                url: "/Usuario/ExcluirUsuario", // Substitua "Usuario" pelo nome do seu controller
+                data: { id: userId },
+                dataType: "json",
+                success: function (response) {
+                    // A resposta do servidor está em response.success
+                    if (response.success) {
+                        // Feche o modal de exclusão
+                        $('#ExcluirUsuario').modal('hide');
+                        alert("Usuário deletado com sucesso!");
+
+                        // Recarregue a página
+                        location.reload();
+                    } else {
+                        alert("Falha ao deletar usuário.");
+                    }
+                },
+                error: function () {
+                    alert("Erro na requisição AJAX.");
+                }
+            });
+        }
+
+
+    </script>
+
+</section>
