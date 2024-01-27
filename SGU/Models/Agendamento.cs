@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SGU.ORM;
+using System;
 using System.Collections.Generic;
 
-namespace SGU.ORM;
+namespace SGC.Models;
 
-public partial class Agendamento
+public class AgendamentoVM
 {
     public int Id { get; set; }
 
@@ -14,4 +15,9 @@ public partial class Agendamento
     public int? FkServicoId { get; set; }
 
     public int? FkUsuarioId { get; set; }
+
+    public virtual Servico? FkServico { get; set; }
+
+    public virtual Usuario? FkUsuario { get; set; }
+   
 }

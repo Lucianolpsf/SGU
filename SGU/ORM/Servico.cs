@@ -10,6 +10,4 @@ public partial class Servico
     public string? Descricao { get; set; }
 
     public decimal? Valor { get; set; }
-
-    public virtual ICollection<Agendamento> Agendamentos { get; set; } = new List<Agendamento>();
 }

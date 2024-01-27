@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] SGU</title>
 
-
+    
     <!-- Favicons -->
     <link href="~/Tema/assets/img/favicon.png" rel="icon">
     <link href="~/Tema/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -45,7 +45,7 @@
         </div>
     </div>
 </head>
-<body>
+<body>   
 
     <!-- Template Main JS File -->
     <script src="~/Tema/assets/js/main.js"></script>
@@ -74,7 +74,7 @@
                         <a class="nav-link text-dark" href="/Home/Index#contact">Fale Conosco</a>
                     </li>
                     <!-- Comando para restringir itens do menu de acordo com usuario-->
-                    @if (Context.Session.GetString("UsuarioTipo") == "Administrador")
+                     @if (Context.Session.GetString("UsuarioTipo") == "Administrador")
                     {
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="/Usuario/Index">Clientes</a>
@@ -143,10 +143,10 @@
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
-
+           
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-
+                
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -158,10 +158,10 @@
     <script src="~/Tema/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/Tema/assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="~/Tema/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="~/Tema/assets/vendor/php-email-form/validate.js"></script>
+    <script src="~/Tema/assets/vendor/php-email-form/validate.js"></script>   
 
     <script src="~/Tema/assets/vendor/glightbox/js/glightbox.js"></script>
     <script src="~/Tema/assets/js/main.js"></script>
-
+    
 </body>
 </html>

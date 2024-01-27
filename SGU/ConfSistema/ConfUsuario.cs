@@ -43,7 +43,7 @@ namespace SGU.ConfSistema
                     {
                         UsuarioVM.Id = (int)item.Id;
                         UsuarioVM.Nome = item.Nome;
-                        UsuarioVM.Senha = item.Senha;
+                        UsuarioVM.Senha = item.Senha; 
                         UsuarioVM.Email = item.Email;
                         UsuarioVM.Telefone = item.Telefone;
                         UsuarioVM.TipoUsuario = item.TipoUsuario;
@@ -61,8 +61,7 @@ namespace SGU.ConfSistema
             }
         }
 
-        public 
-            OperacaoResultado InserirUsuario(string nome, string email, string senha, string telefone, string tipoUsuario)
+        public OperacaoResultado InserirUsuario(string nome, string email, string senha, string telefone, string tipoUsuario)
         {
             OperacaoResultado resultado = new OperacaoResultado();
 
@@ -102,7 +101,7 @@ namespace SGU.ConfSistema
             }
         }
 
-        public bool AlterarUsuario(int Id, string Nome, string Senha, string Email, string Telefone, string tipoUsuario)
+        public bool AlterarUsuario(int Id, string Nome, string Senha,  string Email, string Telefone, string tipoUsuario)
         {
 
             try
