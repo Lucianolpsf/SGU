@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SGU.ORM;
+using System;
 using System.Collections.Generic;
 
-namespace SGU.ORM;
+namespace SGC.Models;
 
-public partial class Manutencao
+public class ManutencaoVM
 {
     public int Id { get; set; }
 

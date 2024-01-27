@@ -17,7 +17,7 @@ namespace SGU.Controllers
 
         public IActionResult Index()
         {
-
+       
             return View();
         }
 

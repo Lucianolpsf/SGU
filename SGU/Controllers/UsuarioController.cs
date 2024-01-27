@@ -34,7 +34,7 @@ namespace SGC.ConfProjeto
         }
         public IActionResult Login()
         {
-            return View();
+           return View();   
         }
         public IActionResult Cadastro()
         {
@@ -80,7 +80,7 @@ namespace SGC.ConfProjeto
 
                 if (resultado.Success)
                 {
-                    return Json(new { success = true, message = "Usuário inserido com sucesso" });
+                    return Json(new { success = true, message = "Cliente inserido com sucesso" });
                 }
                 else
                 {
@@ -99,7 +99,7 @@ namespace SGC.ConfProjeto
             {
                 ConfUsuario conf = new ConfUsuario(_context);
 
-                var rs = conf.AlterarUsuario(usuario.Id, usuario.Nome, usuario.Senha, usuario.Email, usuario.Telefone, usuario.TipoUsuario);
+                var rs = conf.AlterarUsuario(usuario.Id, usuario.Nome, usuario.Senha, usuario.Email, usuario.Telefone,usuario.TipoUsuario);
 
                 return Json(new { success = rs });
 
@@ -118,7 +118,7 @@ namespace SGC.ConfProjeto
             return Json(new { success = rs });
 
         }
-
+       
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
