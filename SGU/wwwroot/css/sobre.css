@@ -52,3 +52,20 @@
     line-height: 24px;
     font-size: 14px;
   }
+
+  .row .sobre-row{
+    display: flex !important;
+    flex-direction: row;
+  }
+
+  #div-log2{
+    position: relative;
+  }
+
+  #log2 {
+    height: 550px;
+    width: auto;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+  }

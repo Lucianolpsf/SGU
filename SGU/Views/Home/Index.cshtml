@@ -1,17 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "";
 }
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
     <div class="container">
-        <h1 style="font-family: 'Tangerine', cursive;">Seja bem-vinda</h1>
+        <h1 class="bem-vindo">Seja bem-vinda</h1>
 
         <!-- <a href="#about" class="btn-get-started scrollto">Get Started</a>  -->
     </div>
 </section>
-
-
 
 <main id="main">
 
@@ -52,8 +50,7 @@
                 <div class="section-title">
                     <h2>Sobre</h2>
                 </div>
-                <div class="row">
-
+                <div class="row sobre-row">
 
                     <div
                         class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
@@ -63,7 +60,7 @@
 
                         <div class="icon-box">
                             <div class="icon">
-                                <img src="/img/hist1.png" style="max-width: 50px; max-height: 50px;"
+                                <img src="/img/sobre/hist1.png" style="max-width: 50px; max-height: 50px;"
                                     alt="Ícone Personalizado">
                             </div>
                             <h4 class="title"><a href="">Minha História</a></h4>
@@ -75,7 +72,7 @@
 
                         <div class="icon-box">
                             <div class="icon">
-                                <img src="/img/met1.png" style="max-width: 50px; max-height: 50px;"
+                                <img src="/img/sobre/met1.png" style="max-width: 50px; max-height: 50px;"
                                     alt="Ícone Personalizado">
                             </div>
                             <h4 class="title"><a href="">Meta</a></h4>
@@ -93,6 +90,7 @@
                         </div>
 
                     </div>
+                    <div id="div-log2"><img id="log2" src="~/img/log2.png" alt="foto Távila Victótia"></div>
                 </div>
 
             </div>
@@ -125,7 +123,7 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="~/img/c1.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c1.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         <!-- <h5>First slide label</h5>
@@ -133,7 +131,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="~/img/c2.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c2.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         @* <h5>Second slide label</h5>
@@ -141,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="~/img/c3.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c3.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         @* <h5>Third slide label</h5>
@@ -160,8 +158,8 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <h4><a href="">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p><br />
+                        <h4><a href="">Volume Brasileiro</a></h4>
+                        <p>Ótima opção para quem deseja um pouco mais de volume e um preenchimento de 100% dos fios naturais.</p><br />
                         <!-- Botao so ira aparecer para usuario logado-->
                         @if (Context.Session.GetString("UsuarioTipo") == "administrador" ||
                         Context.Session.GetString("UsuarioTipo") == "Cliente")
@@ -186,7 +184,7 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="~/img/c3.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c3.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         @* <h5>First slide label</h5>
@@ -194,7 +192,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="~/img/c1.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c1.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         @* <h5>Second slide label</h5>
@@ -202,7 +200,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="~/img/c2.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c2.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         @* <h5>Third slide label</h5>
@@ -221,8 +219,8 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <h4><a href="">Sed ut perspiciatis</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <h4><a href="">Volume 5D</a></h4>
+                        <p>Para quem deseja ousar no visual, ter maior volume, com fios leves e macios, proporcionando um olhar único e marcante.</p>
                     </div>
                 </div>
 
@@ -239,7 +237,7 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="~/img/c2.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c2.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         @* <h5>First slide label</h5>
@@ -247,7 +245,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="~/img/c3.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c3.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         @* <h5>Second slide label</h5>
@@ -255,7 +253,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="~/img/c1.png" class="d-block w-50 mx-auto" alt="...">
+                                    <img src="~/img/servicos/c1.png" class="d-block w-50 mx-auto" alt="...">
                                     <!-- Ajuste a largura da imagem aqui (w-50) -->
                                     <div class="carousel-caption d-none d-md-block">
                                         @* <h5>Third slide label</h5>
@@ -274,8 +272,8 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <h4><a href="">Sed ut perspiciatis</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <h4><a href="#">Alongamento Express</a></h4>
+                        <p>Ótima opção para quem deseja naturalidade. Nesta técnica, o preenchimento e de apenas 50% dos fios naturais.</p>
                     </div>
                 </div>
             </div>
@@ -292,7 +290,6 @@
 
             <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-
 
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
@@ -328,67 +325,15 @@
                         </div>
                     </div><!-- End testimonial item -->
 
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrap">
-                            <div class="testimonial-item">
-                                <img src="#" class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
-                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
-                                    minim.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrap">
-                            <div class="testimonial-item">
-                                <img src="#" class="testimonial-img" alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
-                                    dolore labore illum veniam.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrap">
-                            <div class="testimonial-item">
-                                <img src=#" class="testimonial-img" alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                    culpa fore nisi cillum quid.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- End testimonial item -->
-
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-
         </div>
     </section><!-- End Testimonials Section -->
     <!-- ======= Sessao Galeria ======= -->
 
 
-    <section style="background: #fe601e;" id="gallery" class="gallery">
+    <section id="gallery" class="gallery">
         <div class="container">
 
             <div class="section-title">
@@ -400,11 +345,11 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-        <script src="~/vendor/glightbox/js/glightbox.js"></script>
+        <script src="~/lib/glightbox/js/glightbox.js"></script>
         <script src="~/lib/js/main.js"></script>
 
 
-        <section id="testimonials" class="testimonials">
+        <section id="testimonials" class="testimonials gallery">
             <div class="container">
 
                 <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
@@ -412,7 +357,7 @@
 
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
-                                <div class="testimonial-item">
+                                <div class="gallery-item">
                                     <img src="~/img/gallery/ga1.jpg" class="swiper-img" alt="">
                                 </div>
                             </div>
@@ -420,15 +365,15 @@
 
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="~/img/gallery/ga2.jpg" class="swiper-img" alt="">
+                                <div class="gallery-item">
+                                    <img src="~/img/gallery/ga2.png" class="swiper-img" alt="">
                                 </div>
                             </div>
                         </div><!-- End testimonial item -->
 
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
-                                <div class="testimonial-item">
+                                <div class="gallery-item">
                                     <img src="~/img/gallery/ga3.jpg" class="swiper-img" alt="">
                                 </div>
                             </div>
@@ -436,16 +381,48 @@
 
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="~/img/gallery/ga2.jpg" class="swiper-img" alt="">
+                                <div class="gallery-item">
+                                    <img src="~/img/gallery/ga4.jpg" class="swiper-img" alt="">
                                 </div>
                             </div>
                         </div><!-- End testimonial item -->
 
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="~/img/gallery/gallery-1.jpg" class="swiper-img" alt="">
+                                <div class="gallery-item">
+                                    <img src="~/img/gallery/ga5.jpg" class="swiper-img" alt="">
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="gallery-item">
+                                    <img src="~/img/gallery/ga6.png" class="swiper-img" alt="">
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="gallery-item">
+                                    <img src="~/img/gallery/ga7.jpg" class="swiper-img" alt="">
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="gallery-item">
+                                    <img src="~/img/gallery/ga8.png" class="swiper-img" alt="">
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="gallery-item">
+                                    <img src="~/img/gallery/ga9.png" class="swiper-img" alt="">
                                 </div>
                             </div>
                         </div><!-- End testimonial item -->
@@ -460,80 +437,73 @@
 
     </section>
     <!-- ======= Contact Section ======= -->
-    @* <section id="contact" class="contact">
-    <div class="container">
 
-    <div class="section-title">
-    <h2>Fale Conosco</h2>
-    <p>Deixe aqui sua mensagem, sugestão ou comentário</p>
-    </div>
-    </div>
+    <section id="contact" class="contact">
+            <div class="container">
 
-    <div>
-    <iframe style="border:0; width: 100%; height: 350px;"
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-    frameborder="0" allowfullscreen></iframe>
-    </div>
+                <div class="section-title">
+                    <h2>Fale Conosco</h2>
+                </div>
+            </div>
 
-    <div class="container">
-    <div class="row mt-5">
+            <div class="contato">
+                <div>
+                    <iframe class="grid-map__frame" width="400px" height="350px" data-v-3b334315="" 
+                        src="https://maps.google.com/maps?q=quadra%2018%20lote%2010%20etapa%20A&amp;t=m&amp;z=13&amp;ie=UTF8&amp;output=embed">
+                    </iframe>
+                </div>
 
-    <div class="col-lg-4">
-    <div class="info">
-    <div class="address">
-    <i class="bi bi-geo-alt"></i>
-    <h4>Localização:</h4>
-    <p>A108 Adam Street, New York, NY 535022</p>
-    </div>
+                <div >
+                    <div class="info endereco-info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Localização:</h4>
+                            <p>Quadra 18 Lote 10, Bairro Etapa A, Valparaiso de Goias, Goias</p>
+                        </div>
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>tavilla.victoriamr@gmail.com</p>
+                        </div>
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Chamadas:</h4>
+                            <p>(61) 98186 - 6713</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 form-contato">
+                    <p>Deixe aqui sua mensagem, sugestão ou comentário</p>
+                    <form action="" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome"
+                                    required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Seu Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Menssagem"
+                                required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Processando</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Mensagem enviada com sucesso. Obrigado!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Enviar mensagem</button></div>
+                    </form>
+                </div>
+            </div>
 
-    <div class="email">
-    <i class="bi bi-envelope"></i>
-    <h4>Email:</h4>
-    <p>info@example.com</p>
-    </div>
-
-    <div class="phone">
-    <i class="bi bi-phone"></i>
-    <h4>Call:</h4>
-    <p>+1 5589 55488 55s</p>
-    </div>
-
-    </div>
-
-    </div>
-
-    <div class="col-lg-8 mt-5 mt-lg-0">
-
-    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-    <div class="row">
-    <div class="col-md-6 form-group">
-    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-    </div>
-    <div class="col-md-6 form-group mt-3 mt-md-0">
-    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-    </div>
-    </div>
-    <div class="form-group mt-3">
-    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-    </div>
-    <div class="form-group mt-3">
-    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-    </div>
-    <div class="my-3">
-    <div class="loading">Loading</div>
-    <div class="error-message"></div>
-    <div class="sent-message">Your message has been sent. Thank you!</div>
-    </div>
-    <div class="text-center"><button type="submit">Send Message</button></div>
-    </form>
-
-    </div>
-
-    </div>
-
-    </div>
-
-    </section><!-- End Contact Section --> *@
+        </section>
 
 </main><!-- End #main -->
 <!-- ======= Footer ======= -->
