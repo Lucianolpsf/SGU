@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url(./response.css);
+@import url(./header.css);
+@import url(./bemvindo.css);
+@import url(./sobrenos.css);
+@import url(./sobre.css);
+@import url(./servicos.css);
+@import url(./depoimentos.css);
+@import url(./galeria.css);
+@import url(./faleconoso.css);
+
+:root {
+    --darkiest-color: #792100;
+    --dark-color: #9a3d02;
+    --dark-medium-color: #bd5a02;
+    --darkless-color: #ffa03a;
+    --orange-color: #f6961f;
+    --orange2-color:#ff843f;
+    --lightless-color: #fcb743;
+    --light-color: #ffd864;
+    --lightiest-color: #fff884;
+    --modal-fundo: #ff7300a8;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: var(--darkiest-color) !important;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.bem-vindo{
+    font-family: 'Dancing Script', cursive;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--darkiest-color) !important;
+}
+
+p {
+    color: var(--dark-color);
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--darkiest-color);
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--lightless-color);
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--lightless-color);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
