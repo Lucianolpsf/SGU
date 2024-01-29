@@ -1,0 +1,35 @@
+/* bem vindos */
+
+@media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    #hero {
+      margin-bottom: 0;
+      height: 100vh;
+    }
+  
+    #hero .container {
+      padding-bottom: 63px;
+    }
+  
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-height: 600px) {
+    #hero {
+      height: 110vh;
+    }
+  }
