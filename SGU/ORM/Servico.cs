@@ -7,7 +7,13 @@ public partial class Servico
 {
     public int Id { get; set; }
 
-    public string? Descricao { get; set; }
+    public string? Tecnica { get; set; }
 
-    public decimal? Valor { get; set; }
+    public double? Valor { get; set; }
+
+    public int? IdTipoServico { get; set; }
+
+    public virtual ICollection<Agendamento> Agendamentos { get; } = new List<Agendamento>();
+
+    public virtual TipoServico? IdTipoServicoNavigation { get; set; }
 }
