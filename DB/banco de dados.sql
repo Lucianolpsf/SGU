@@ -63,6 +63,9 @@ ALTER TABLE Comentario ADD CONSTRAINT FK_Comentario_2
 go
 insert into Usuario (Nome, Telefone, Email, Senha, TipoUsuario)
 values
-	('karython', '61981035447', 'karython.unai@gmail.com', 'admin', '1')
+	('karython', '61981035447', 'karython.unai@gmail.com', 'admin', 'administrador')
 go
 
+
+alter table Usuario
+alter column TipoUsuario varchar(50)

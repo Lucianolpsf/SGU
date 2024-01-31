@@ -122,7 +122,9 @@ public partial class SguContext : DbContext
             entity.Property(e => e.Telefone)
                 .HasMaxLength(50)
                 .IsUnicode(false);
-            entity.Property(e => e.TipoUsuario).HasDefaultValueSql("((0))");
+            entity.Property(e => e.TipoUsuario)
+                .HasMaxLength(50)
+                .IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);
