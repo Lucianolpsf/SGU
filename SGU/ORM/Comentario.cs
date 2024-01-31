@@ -7,9 +7,9 @@ public partial class Comentario
 {
     public int Id { get; set; }
 
-    public string? Descricao { get; set; }
+    public string Descricao { get; set; } = null!;
 
-    public int? IdUsuario { get; set; }
+    public int? FkUsuarioId { get; set; }
 
-    public virtual Usuario? IdUsuarioNavigation { get; set; }
+    public virtual Usuario? FkUsuario { get; set; }
 }
