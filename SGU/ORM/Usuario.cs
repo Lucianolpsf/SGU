@@ -15,7 +15,7 @@ public partial class Usuario
 
     public string Senha { get; set; } = null!;
 
-    public string? TipoUsuario { get; set; }
+    public bool? TipoUsuario { get; set; }
 
     public virtual ICollection<Agendamento> Agendamentos { get; } = new List<Agendamento>();
 

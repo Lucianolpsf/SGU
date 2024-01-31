@@ -31,7 +31,7 @@ CREATE TABLE Usuario (
     Email varchar(200) not null,
     Telefone varchar(50) not null,
 	Senha varchar (50) not null,
-    TipoUsuario BIT
+    TipoUsuario BIT default 0
 );
 
 CREATE TABLE Comentario (
@@ -63,5 +63,6 @@ ALTER TABLE Comentario ADD CONSTRAINT FK_Comentario_2
 go
 insert into Usuario (Nome, Telefone, Email, Senha, TipoUsuario)
 values
-	('karython', '61981035447', 'karython.unai@gmail.com', 'admin', 'administrador')
+	('karython', '61981035447', 'karython.unai@gmail.com', 'admin', '1')
 go
+
