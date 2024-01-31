@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\SGU.props" />
+  <Import Project="../build/SGU.props" />
 </Project>

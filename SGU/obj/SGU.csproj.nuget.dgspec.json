@@ -1,37 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gomes\\Desktop\\projeto startup\\SGU\\SGU\\SGU.csproj": {}
+    "/home/luciano/Documentos/projetos/SGU/SGU/SGU.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gomes\\Desktop\\projeto startup\\SGU\\SGU\\SGU.csproj": {
+    "/home/luciano/Documentos/projetos/SGU/SGU/SGU.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gomes\\Desktop\\projeto startup\\SGU\\SGU\\SGU.csproj",
+        "projectUniqueName": "/home/luciano/Documentos/projetos/SGU/SGU/SGU.csproj",
         "projectName": "SGU",
-        "projectPath": "C:\\Users\\Gomes\\Desktop\\projeto startup\\SGU\\SGU\\SGU.csproj",
-        "packagesPath": "C:\\Users\\Gomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gomes\\Desktop\\projeto startup\\SGU\\SGU\\obj\\",
+        "projectPath": "/home/luciano/Documentos/projetos/SGU/SGU/SGU.csproj",
+        "packagesPath": "/home/luciano/.nuget/packages/",
+        "outputPath": "/home/luciano/Documentos/projetos/SGU/SGU/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/luciano/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -42,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -79,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
         }
       }
     }
