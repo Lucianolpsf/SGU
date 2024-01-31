@@ -22,7 +22,7 @@
 
 <body>
     <!-- Template Main JS File -->
-    <script src="~/lib/js/main.js"></script>
+    @* <script src="~/lib/js/main.js"></script> *@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
@@ -51,7 +51,7 @@
                     @if (Context.Session.GetString("UsuarioTipo") == "administrador")
                     {
                         <li class="nav-item">
-                            <a href="/Usuario/Index">Clientes</a>
+                            <a href="/Usuario/Index" class="clientes">Clientes</a>
                         </li>
                     }
 
@@ -61,7 +61,7 @@
                     {
                         <!-- Se o usuário estiver autenticado, exibe o dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="usuarioDropdown" role="button"
+                            <a class="nav-link dropdown-toggle user-loged" href="#" id="usuarioDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @Context.Session.GetString("UsuarioNome")
                             </a>
@@ -72,7 +72,7 @@
                                             <div class="dropdown-divider"></div>
                                             -->
 
-                                <a class="dropdown-item" href="/Usuario/Logout" onclick="fazerLogout()">Sair</a>
+                                <a class="dropdown-item .sair" href="/Usuario/Logout" onclick="fazerLogout()">Sair</a>
                             </div>
                         </li>
                     }
@@ -103,15 +103,19 @@
 
             <div class="me-md-auto text-center">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Tavilla Victória Extensão de Cílios</span></strong>. Todos os
-                    Direitos Reservados - Desenvolvido por GomesTechnology
+                    <p>
+                        <small>
+                            &copy; Copyright <strong><span>Tavilla Victória Extensão de Cílios</span></strong>. Todos os
+                            Direitos Reservados - Desenvolvido por GomesTechnology
+                        </small>
+                    </p>
                 </div>
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->
                     <!-- You can delete the links only if you purchased the pro version. -->
                     <!-- Licensing information: https://bootstrapmade.com/license/ -->
                     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    <p><small>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></small></p>
                 </div>
             </div>
 
@@ -127,7 +131,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="~/js/main.js"></script>
-    <script src="~/lib/js/validate.js"></script>
+    <script src="~/js/validate.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
