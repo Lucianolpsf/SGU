@@ -103,3 +103,14 @@ section {
 .section-title p {
     margin-bottom: 0;
 }
+
+.whatsapp-image {
+    position: fixed;
+    right: 2em;
+    bottom: 3em;
+    z-index: 500;
+}
+
+.whatsapp-image img {
+    width: 4em;
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yIjDYh4o4jmh2UuGrxr4dRP2Goha8ji+7wPqiYdmQiU=",
+  "Hash": "4iPkpMpVvcLzmswv+A/zObAzDEj8hHva4NxhMIGK6Ag=",
   "Source": "SGU",
   "BasePath": "_content/SGU",
   "Mode": "Default",
@@ -423,6 +423,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/gallery/ga9.png"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
     },
     {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log1.jpg",

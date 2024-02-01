@@ -159,15 +159,8 @@
                             </button>
                         </div>
                         <h4><a href="">Volume Brasileiro</a></h4>
-                        <p>Ótima opção para quem deseja um pouco mais de volume e um preenchimento de 100% dos fios naturais.</p><br />
-                        <!-- Botao so ira aparecer para usuario logado-->
-                        @if (Context.Session.GetString("UsuarioTipo") == "administrador" ||
-                        Context.Session.GetString("UsuarioTipo") == "Cliente")
-                        {
-                            <button type="button" class="btn btn-warning">Agendar</button>
-                        }
-
-
+                        <p>Ótima opção para quem deseja um pouco mais de volume e um preenchimento de 100% dos fios
+                            naturais.</p><br />
                     </div>
 
                 </div>
@@ -220,13 +213,8 @@
                             </button>
                         </div>
                         <h4><a href="">Volume 5D</a></h4>
-                        <p>Para quem deseja ousar no visual, ter maior volume, com fios leves e macios, proporcionando um olhar único e marcante.</p>
-                        <!-- Botao so ira aparecer para usuario logado-->
-                        @if (Context.Session.GetString("UsuarioTipo") == "administrador" ||
-                        Context.Session.GetString("UsuarioTipo") == "Cliente")
-                        {
-                            <button type="button" class="btn btn-warning">Agendar</button>
-                        }
+                        <p>Para quem deseja ousar no visual, ter maior volume, com fios leves e macios, proporcionando
+                            um olhar único e marcante.</p>
                     </div>
                 </div>
 
@@ -279,15 +267,18 @@
                             </button>
                         </div>
                         <h4><a href="#">Alongamento Express</a></h4>
-                        <p>Ótima opção para quem deseja naturalidade. Nesta técnica, o preenchimento e de apenas 50% dos fios naturais.</p>
-                        <!-- Botao so ira aparecer para usuario logado-->
-                        @if (Context.Session.GetString("UsuarioTipo") == "administrador" ||
-                        Context.Session.GetString("UsuarioTipo") == "Cliente")
-                        {
-                            <button type="button" class="btn btn-warning">Agendar</button>
-                        }
+                        <p>Ótima opção para quem deseja naturalidade. Nesta técnica, o preenchimento e de apenas 50% dos
+                            fios naturais.</p>
                     </div>
                 </div>
+            </div>
+            <div class="agendamento">
+                <!-- Botao so ira aparecer para usuario logado-->
+                @if (Context.Session.GetString("UsuarioTipo") == "administrador" ||
+                Context.Session.GetString("UsuarioTipo") == "Cliente")
+                {
+                    <a href="#"><button type="button" class="btn btn-warning btn-agendar">Agende seu atendimento 💋</button></a>
+                }
             </div>
         </div>
     </section><!-- End Services Section -->
@@ -447,71 +438,79 @@
     <!-- ======= Contact Section ======= -->
 
     <section id="contact" class="contact">
-            <div class="container">
+        <div class="container">
 
-                <div class="section-title">
-                    <h2>Fale Conosco</h2>
-                </div>
+            <div class="section-title">
+                <h2>Fale Conosco</h2>
+            </div>
+        </div>
+
+        <div class="contato">
+            <div>
+                <iframe class="grid-map__frame" width="400px" height="350px" data-v-3b334315=""
+                    src="https://maps.google.com/maps?q=quadra%2018%20lote%2010%20etapa%20A&amp;t=m&amp;z=13&amp;ie=UTF8&amp;output=embed">
+                </iframe>
             </div>
 
-            <div class="contato">
-                <div>
-                    <iframe class="grid-map__frame" width="400px" height="350px" data-v-3b334315="" 
-                        src="https://maps.google.com/maps?q=quadra%2018%20lote%2010%20etapa%20A&amp;t=m&amp;z=13&amp;ie=UTF8&amp;output=embed">
-                    </iframe>
-                </div>
-
-                <div >
-                    <div class="info endereco-info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Localização:</h4>
-                            <p>Quadra 18 Lote 10, Bairro Etapa A, Valparaiso de Goias, Goias</p>
-                        </div>
-                        <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>tavilla.victoriamr@gmail.com</p>
-                        </div>
-                        <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Chamadas:</h4>
-                            <p>(61) 98186 - 6713</p>
-                        </div>
+            <div>
+                <div class="info endereco-info">
+                    <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Localização:</h4>
+                        <p>Quadra 18 Lote 10, Bairro Etapa A, Valparaiso de Goias, Goias</p>
+                    </div>
+                    <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>tavilla.victoriamr@gmail.com</p>
+                    </div>
+                    <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Chamadas:</h4>
+                        <p>(61) 98186 - 6713</p>
                     </div>
                 </div>
-                <div class="col-lg-8 form-contato">
-                    <p>Deixe aqui sua mensagem, sugestão ou comentário</p>
-                    <form action="" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome"
-                                    required>
-                            </div>
-                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Seu Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
+            </div>
+            <div class="col-lg-8 form-contato">
+                <p>Deixe aqui sua mensagem, sugestão ou comentário</p>
+                <form method="post" role="form" class="php-email-form">
+
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome"
                                 required>
                         </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Menssagem"
-                                required></textarea>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email"
+                                required>
                         </div>
-                        <div class="my-3">
-                            <div class="loading">Processando</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Mensagem enviada com sucesso. Obrigado!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Enviar mensagem</button></div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto"
+                            required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Menssagem"
+                            required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Processando</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Mensagem enviada com sucesso. Obrigado!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Enviar mensagem</button></div>
+                </form>
             </div>
+        </div>
 
-        </section>
+    </section>
+
+    <picture class="whatsapp-image">
+        <a href="https://wa.me//5561981866713?text=Seja bem vindo(a), será um prazer lhe atender" target="_blank">
+            <img src="~/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
+                alt="icone do whatsapp">
+        </a>
+    </picture>
 
 </main><!-- End #main -->
 <!-- ======= Footer ======= -->
@@ -526,11 +525,11 @@
         var tipoUsuario = '@Context.Session.GetString("TipoUsuario")';
 
         // Verifique se tipoUsuario não é nulo antes de imprimir
-        if (tipoUsuario !== null) {
+    @* if (tipoUsuario !== null) {
             console.log("Tipo de Usuário:", tipoUsuario);
-        } else {
+            } else {
             console.log("Tipo de Usuário não definido.");
-        }
+            } *@
 
         // Seu código adicional aqui...
     });
