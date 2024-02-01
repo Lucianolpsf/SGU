@@ -93,6 +93,14 @@
       "PackagePath": "staticwebassets/img/gallery/ga9.png"
     },
     {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/btn-top.png",
+      "PackagePath": "staticwebassets/img/icons/btn-top.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-acima-dentro-de-um-círculo-80.png",
+      "PackagePath": "staticwebassets/img/icons/icons8-acima-dentro-de-um-círculo-80.png"
+    },
+    {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
       "PackagePath": "staticwebassets/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
     },
