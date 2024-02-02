@@ -6,6 +6,11 @@
     Layout = null;
 }
 
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <!-- Favicons -->
 <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-ico">
 
@@ -26,7 +31,7 @@
 <title>Login Page</title>
 
 <body>
-    <div class="custom_container">
+    <div id="custom_container" class="custom_container">
         <div class="tab-content">
             <h1 class="custom_logo "><a href="/Home/Index#hero">Távila Victória</a></h1>
             <!-- Pills navs -->
@@ -64,15 +69,13 @@
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <input type="email" id="loginEmail" class="form-control" placeholder="Digite seu Email"
-                                style="width:400px;" required />
+                            <input type="email" id="loginEmail" class="form-control" placeholder="Digite seu Email" required />
 
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <input type="password" id="loginPassword" class="form-control" required
-                                placeholder="Digite sua senha" />
+                            <input type="password" id="loginPassword" class="form-control" required placeholder="Digite sua senha" />
 
                         </div>
 
@@ -92,8 +95,7 @@
                         </div>
 
                         <!-- Submit button -->
-                        <button type="button" class="nav-link active btn btn-primary btn-block"
-                            style="margin-left: auto;" onclick="ConsultaLogin ()">Entrar</button>
+                        <button type="button" id="send-button" class="nav-link active btn btn-primary btn-block" onclick="ConsultaLogin ()">Entrar</button>
 
                         <!-- Register buttons -->
 
@@ -134,3 +136,4 @@
         });
     }
 </script>
+</html>
