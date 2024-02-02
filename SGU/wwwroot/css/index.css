@@ -9,7 +9,7 @@
 @import url(./depoimentos.css);
 @import url(./galeria.css);
 @import url(./faleconoso.css);
-/* @import url(./login.css); */
+@import url(./cliente.css);
 
 :root {
     --darkiest-color: #792100;
@@ -24,6 +24,8 @@
     --modal-fundo: #ff7300a8;
     --white-color: #ffffff;
     --black-color: #000000;
+    --light-pink:#e760b0;
+    --dark-pink:#ff0099;
 }
 
 * {
@@ -31,6 +33,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+}
+main{
+    min-height: calc(100vh - 80px);
 }
 
 h1,
@@ -115,4 +124,9 @@ section {
 .whatsapp-image img {
     width: 4em;
     margin-bottom: 1em;
+}
+
+footer {
+    max-height: 85px;
+    padding-top: .8em;
 }

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/bemvindo.css"
     },
     {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/cliente.css",
+      "PackagePath": "staticwebassets/css/cliente.css"
+    },
+    {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/depoimentos.css",
       "PackagePath": "staticwebassets/css/depoimentos.css"
     },

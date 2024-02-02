@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nWiS157Pg+zBMAJmDC+2dJoI5KFM016SYQyFIrCjkZM=",
+  "Hash": "ugZNrqMKwiPpvRjotVq7k9evtmTBp37RoLsv7JKJXG0=",
   "Source": "SGU",
   "BasePath": "_content/SGU",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/bemvindo.css"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/cliente.css",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "css/cliente.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/cliente.css"
     },
     {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/depoimentos.css",
