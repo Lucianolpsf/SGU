@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets/css/index.css"
     },
     {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/login.css",
+      "PackagePath": "staticwebassets/css/login.css"
+    },
+    {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/response.css",
       "PackagePath": "staticwebassets/css/response.css"
     },
