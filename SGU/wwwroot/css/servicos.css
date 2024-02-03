@@ -44,5 +44,11 @@
 .btn-agendar{
   font-weight: 700;
   color: var(--white-color);
+  background-color: var(--dark-pink);
   padding: 1em 2em;
+  transition: .5s;
+}
+
+.btn-agendar:hover{
+    background-color: var(--light-pink);
 }

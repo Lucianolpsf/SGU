@@ -236,7 +236,7 @@
 
 .navbar-mobile .dropdown > .dropdown-active {
     display: block;
-    left: 41%;
+    /* left: 41%; */
 }
 
 .clientes {

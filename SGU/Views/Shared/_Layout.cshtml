@@ -91,7 +91,6 @@
         </div>
     </header><!-- End Header -->
 
-
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
@@ -129,7 +128,7 @@
 
     <script src="~/js/main.js"></script>
     <script src="~/js/validate.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @* @await RenderSectionAsync("Scripts", required: false) *@
 </body>
 
 </html>
