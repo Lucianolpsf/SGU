@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "n4d0FUhBlkhg/uLF+pyqygbK7T0b1RX3zXTbCI11kag=",
+  "Hash": "S7NoPCZSMQOKM/et4NSQSNHY2P8UHnke9uHteZSYWfs=",
   "Source": "SGU",
   "BasePath": "_content/SGU",
   "Mode": "Default",
@@ -542,6 +542,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/log2.png"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/mobile.png",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "img/mobile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/mobile.png"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/notebook.png",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "img/notebook.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/notebook.png"
     },
     {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/servicos/c1.png",

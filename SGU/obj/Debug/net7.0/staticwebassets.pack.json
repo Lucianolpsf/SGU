@@ -121,6 +121,14 @@
       "PackagePath": "staticwebassets/img/log2.png"
     },
     {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/mobile.png",
+      "PackagePath": "staticwebassets/img/mobile.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/notebook.png",
+      "PackagePath": "staticwebassets/img/notebook.png"
+    },
+    {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/servicos/c1.png",
       "PackagePath": "staticwebassets/img/servicos/c1.png"
     },

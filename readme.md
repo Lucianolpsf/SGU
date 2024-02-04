@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="./SGU/wwwroot/img/notebook.png" alt="Banner-project-notebook" width=750 />
-  <img src="./SGU/wwwroot/img/mobile.png" alt="Banner-project-mobile" width=200/>
+  <img src="./SGU/wwwroot/img/notebook.png" alt="Banner-project-notebook" width=640 />
+  <img src="./SGU/wwwroot/img/mobile.png" alt="Banner-project-mobile" width=150/>
 </div>
 
 ## Tópicos
@@ -45,12 +45,7 @@ Este projeto é destinado ao desenvolvimento de um sistema particular de gerenci
 ## Layout
 
 <div align="center">
-<video width="640" height="380" controls autoplay loop>
-  <source src="./SGU/wwwroot/video/Layout.webm" type="video/webm">
-</video>
-<video width="240" height="480" controls autoplay loop>
-  <source src="./SGU/wwwroot/video/mobile-layout.webm" type="video/webm">
-</video>
+  <img src="./SGU/wwwroot/img/github/mobile.gif" alt="Animação de layout">
 </div>
 
 ## Funcionalidades
@@ -92,6 +87,7 @@ Afim de facilitar a organização e manutenção do código, foi definido um pad
     - **/Home**: Devido seu nivel de detalhamento foi separa um diretorio proprio para a home page
     - **/Usuario**: Estilos de todas as paginas de interação do usurio.
   - **/img**: Todas as imagens encontradas no projeto
+    - **/github**: Midias para Readme.md
     - **/gallery**: Destinada as imagens que farão parte da galeria na Home page
     - **/icons**: Icones tulizando em todo o website
     - **/servicos**: Imagem de serviços encontrados na aplicação
