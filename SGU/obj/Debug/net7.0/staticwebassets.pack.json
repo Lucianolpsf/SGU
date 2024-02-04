@@ -5,52 +5,52 @@
       "PackagePath": "staticwebassets/SGU.bundle.scp.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/bemvindo.css",
-      "PackagePath": "staticwebassets/css/bemvindo.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/bemvindo.css",
+      "PackagePath": "staticwebassets/css/Home/bemvindo.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/cliente.css",
-      "PackagePath": "staticwebassets/css/cliente.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/depoimentos.css",
+      "PackagePath": "staticwebassets/css/Home/depoimentos.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/depoimentos.css",
-      "PackagePath": "staticwebassets/css/depoimentos.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/faleconoso.css",
+      "PackagePath": "staticwebassets/css/Home/faleconoso.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/faleconoso.css",
-      "PackagePath": "staticwebassets/css/faleconoso.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/galeria.css",
+      "PackagePath": "staticwebassets/css/Home/galeria.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/galeria.css",
-      "PackagePath": "staticwebassets/css/galeria.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/header.css",
+      "PackagePath": "staticwebassets/css/Home/header.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/header.css",
-      "PackagePath": "staticwebassets/css/header.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/servicos.css",
+      "PackagePath": "staticwebassets/css/Home/servicos.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobre.css",
+      "PackagePath": "staticwebassets/css/Home/sobre.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobrenos.css",
+      "PackagePath": "staticwebassets/css/Home/sobrenos.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/cliente.css",
+      "PackagePath": "staticwebassets/css/Usuario/cliente.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/login.css",
+      "PackagePath": "staticwebassets/css/Usuario/login.css"
     },
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/index.css",
       "PackagePath": "staticwebassets/css/index.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/login.css",
-      "PackagePath": "staticwebassets/css/login.css"
-    },
-    {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/response.css",
       "PackagePath": "staticwebassets/css/response.css"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/servicos.css",
-      "PackagePath": "staticwebassets/css/servicos.css"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/sobre.css",
-      "PackagePath": "staticwebassets/css/sobre.css"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/sobrenos.css",
-      "PackagePath": "staticwebassets/css/sobrenos.css"
     },
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/favicon.ico",
@@ -97,12 +97,20 @@
       "PackagePath": "staticwebassets/img/icons/btn-top.png"
     },
     {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/hist1.png",
+      "PackagePath": "staticwebassets/img/icons/hist1.png"
+    },
+    {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-acima-dentro-de-um-círculo-80.png",
       "PackagePath": "staticwebassets/img/icons/icons8-acima-dentro-de-um-círculo-80.png"
     },
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
       "PackagePath": "staticwebassets/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/met1.png",
+      "PackagePath": "staticwebassets/img/icons/met1.png"
     },
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log1.jpg",
@@ -123,14 +131,6 @@
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/servicos/c3.png",
       "PackagePath": "staticwebassets/img/servicos/c3.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/sobre/hist1.png",
-      "PackagePath": "staticwebassets/img/sobre/hist1.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/sobre/met1.png",
-      "PackagePath": "staticwebassets/img/sobre/met1.png"
     },
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/js/main.js",
@@ -463,6 +463,14 @@
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/swiper/swiper-bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/swiper/swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/video/Layout.webm",
+      "PackagePath": "staticwebassets/video/Layout.webm"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/video/mobile-layout.webm",
+      "PackagePath": "staticwebassets/video/mobile-layout.webm"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SGU.Microsoft.AspNetCore.StaticWebAssets.props",

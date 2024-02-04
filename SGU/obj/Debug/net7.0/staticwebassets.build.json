@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I95oWZYVvzMgKcduzd/H3BAYJ0EKlxC4w8n+o7WRkak=",
+  "Hash": "n4d0FUhBlkhg/uLF+pyqygbK7T0b1RX3zXTbCI11kag=",
   "Source": "SGU",
   "BasePath": "_content/SGU",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "/home/luciano/Documentos/projetos/SGU/SGU/obj/Debug/net7.0/scopedcss/projectbundle/SGU.bundle.scp.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/bemvindo.css",
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/bemvindo.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
       "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
       "BasePath": "_content/SGU",
-      "RelativePath": "css/bemvindo.css",
+      "RelativePath": "css/Home/bemvindo.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,15 +65,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/bemvindo.css"
+      "OriginalItemSpec": "wwwroot/css/Home/bemvindo.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/cliente.css",
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/depoimentos.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
       "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
       "BasePath": "_content/SGU",
-      "RelativePath": "css/cliente.css",
+      "RelativePath": "css/Home/depoimentos.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,15 +82,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/cliente.css"
+      "OriginalItemSpec": "wwwroot/css/Home/depoimentos.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/depoimentos.css",
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/faleconoso.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
       "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
       "BasePath": "_content/SGU",
-      "RelativePath": "css/depoimentos.css",
+      "RelativePath": "css/Home/faleconoso.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,15 +99,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/depoimentos.css"
+      "OriginalItemSpec": "wwwroot/css/Home/faleconoso.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/faleconoso.css",
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/galeria.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
       "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
       "BasePath": "_content/SGU",
-      "RelativePath": "css/faleconoso.css",
+      "RelativePath": "css/Home/galeria.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/faleconoso.css"
+      "OriginalItemSpec": "wwwroot/css/Home/galeria.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/galeria.css",
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/header.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
       "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
       "BasePath": "_content/SGU",
-      "RelativePath": "css/galeria.css",
+      "RelativePath": "css/Home/header.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,15 +133,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/galeria.css"
+      "OriginalItemSpec": "wwwroot/css/Home/header.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/header.css",
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/servicos.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
       "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
       "BasePath": "_content/SGU",
-      "RelativePath": "css/header.css",
+      "RelativePath": "css/Home/servicos.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,7 +150,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/header.css"
+      "OriginalItemSpec": "wwwroot/css/Home/servicos.css"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobre.css",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "css/Home/sobre.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Home/sobre.css"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobrenos.css",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "css/Home/sobrenos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Home/sobrenos.css"
     },
     {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/index.css",
@@ -170,23 +204,6 @@
       "OriginalItemSpec": "wwwroot/css/index.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/login.css",
-      "SourceId": "SGU",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
-      "BasePath": "_content/SGU",
-      "RelativePath": "css/login.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/login.css"
-    },
-    {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/response.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
@@ -204,12 +221,12 @@
       "OriginalItemSpec": "wwwroot/css/response.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/servicos.css",
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/cliente.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
       "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
       "BasePath": "_content/SGU",
-      "RelativePath": "css/servicos.css",
+      "RelativePath": "css/Usuario/cliente.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/servicos.css"
+      "OriginalItemSpec": "wwwroot/css/Usuario/cliente.css"
     },
     {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/sobre.css",
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/login.css",
       "SourceId": "SGU",
       "SourceType": "Discovered",
       "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
       "BasePath": "_content/SGU",
-      "RelativePath": "css/sobre.css",
+      "RelativePath": "css/Usuario/login.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,24 +252,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/sobre.css"
-    },
-    {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/sobrenos.css",
-      "SourceId": "SGU",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
-      "BasePath": "_content/SGU",
-      "RelativePath": "css/sobrenos.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/sobrenos.css"
+      "OriginalItemSpec": "wwwroot/css/Usuario/login.css"
     },
     {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/favicon.ico",
@@ -442,6 +442,23 @@
       "OriginalItemSpec": "wwwroot/img/icons/btn-top.png"
     },
     {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/hist1.png",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "img/icons/hist1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/icons/hist1.png"
+    },
+    {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-acima-dentro-de-um-círculo-80.png",
       "SourceId": "SGU",
       "SourceType": "Discovered",
@@ -474,6 +491,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/met1.png",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "img/icons/met1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/icons/met1.png"
     },
     {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log1.jpg",
@@ -559,40 +593,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/servicos/c3.png"
-    },
-    {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/sobre/hist1.png",
-      "SourceId": "SGU",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
-      "BasePath": "_content/SGU",
-      "RelativePath": "img/sobre/hist1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/sobre/hist1.png"
-    },
-    {
-      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/sobre/met1.png",
-      "SourceId": "SGU",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
-      "BasePath": "_content/SGU",
-      "RelativePath": "img/sobre/met1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/sobre/met1.png"
     },
     {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/js/main.js",
@@ -2004,6 +2004,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/swiper/swiper-bundle.min.js.map"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/video/Layout.webm",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "video/Layout.webm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/video/Layout.webm"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/video/mobile-layout.webm",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "video/mobile-layout.webm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/video/mobile-layout.webm"
     }
   ]
 }
