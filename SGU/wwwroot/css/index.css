@@ -39,7 +39,7 @@ html {
     min-height: 100vh;
 }
 main{
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 100px);
 }
 
 h1,

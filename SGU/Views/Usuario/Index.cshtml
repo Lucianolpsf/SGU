@@ -26,8 +26,11 @@
             </div>
         </div>
 
-        <div class="table-container">
-            <table id="TbClientes">
+        <div class="table-container table-responsive">
+            <table id="TbClientes" class="table">
+                <colgroup>
+                    <col class="tc-nome">
+                </colgroup>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -36,8 +39,8 @@
                         <th>Email</th>
                         <th>Telefone</th>
                         <th>Tipo de Usuário</th>
-                        <th style="color: blue; text-align: center;">Editar</th>
-                        <th style="color: red; text-align: center;">Excluir</th>
+                        <th class="editar">Editar</th>
+                        <th class="excluir">Excluir</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -72,7 +75,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Editar Cliente</h5>
+                    <h1 class="modal-title" id="exampleModalLabel">Editar Cliente</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -114,7 +117,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Excluir Cliente</h5>
+                    <h1 class="modal-title" id="exampleModalLabel">Excluir Cliente</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

@@ -7,11 +7,17 @@ main:has(#client-maneger){
     var(--dark-pink)) !important;
 }
 
+#clientes-page-section{
+    padding: 1em;
+}
+
 #client-maneger{
     background-color: var(--white-color);
     margin-top: 5em;
     border-radius: 8px;
     box-shadow: 2px 0 10px -2px var(--darkiest-color);
+    height: 680px;
+    overflow: hidden;
 }
 
 .cliente-title-maneger{
@@ -58,21 +64,19 @@ main:has(#client-maneger){
     background-color: transparent;
 }
 
-
-
 .table-container {
-    max-height: 400px;
+    max-height: 520px;
     overflow-y: auto;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    /* width: 100%; */
+    /* border-collapse: collapse; */
+    /* margin: 20px 0; */
     font-size: 14px;
     color: #333;
     border: 1px solid #ddd;
-    table-layout: fixed;
+    /* table-layout: fixed; */
 }
 
 th, td {
@@ -102,4 +106,30 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: var(--lightless-color);
+}
+
+.editar{
+    color: blue; text-align: center;
+}
+.excluir{
+    color: red; text-align: center;
+}
+
+.modal-header {
+    background-image: 
+    linear-gradient(to right, 
+    var(--orange-color), 
+    var(--orange2-color),
+    var(--light-pink),
+    var(--dark-pink))
+    
+}
+
+.modal-header h1{
+    color: white !important;
+    font-size: 24px;
+}
+
+.tc-nome{
+    width: 3em !important;
 }

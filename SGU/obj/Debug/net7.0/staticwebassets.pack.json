@@ -93,6 +93,18 @@
       "PackagePath": "staticwebassets/img/gallery/ga9.png"
     },
     {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/mobile.gif",
+      "PackagePath": "staticwebassets/img/github/mobile.gif"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/mobile.png",
+      "PackagePath": "staticwebassets/img/github/mobile.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/notebook.png",
+      "PackagePath": "staticwebassets/img/github/notebook.png"
+    },
+    {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/btn-top.png",
       "PackagePath": "staticwebassets/img/icons/btn-top.png"
     },
@@ -119,14 +131,6 @@
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log2.png",
       "PackagePath": "staticwebassets/img/log2.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/mobile.png",
-      "PackagePath": "staticwebassets/img/mobile.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/notebook.png",
-      "PackagePath": "staticwebassets/img/notebook.png"
     },
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/servicos/c1.png",
@@ -471,14 +475,6 @@
     {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/swiper/swiper-bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/swiper/swiper-bundle.min.js.map"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/video/Layout.webm",
-      "PackagePath": "staticwebassets/video/Layout.webm"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/video/mobile-layout.webm",
-      "PackagePath": "staticwebassets/video/mobile-layout.webm"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SGU.Microsoft.AspNetCore.StaticWebAssets.props",
