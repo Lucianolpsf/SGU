@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="./SGU/wwwroot/img/notebook.png" alt="Banner-project-notebook" width=640 />
-  <img src="./SGU/wwwroot/img/mobile.png" alt="Banner-project-mobile" width=150/>
+  <img src="./SGU/wwwroot/img/github/notebook.png" alt="Banner-project-notebook" width=640 />
+  <img src="./SGU/wwwroot/img/github/mobile.png" alt="Banner-project-mobile" width=150/>
 </div>
 
 ## Tópicos
