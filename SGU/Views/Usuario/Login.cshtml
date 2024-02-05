@@ -6,83 +6,29 @@
     Layout = null;
 }
 
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <!-- Favicons -->
 <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-ico">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/SGU.styles.css" asp-append-version="true" />
 
 <!-- bibliotecas -->
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
 <link href="~/lib/glightbox/css/glightbox.min.css" rel="stylesheet">
 <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+<link rel="stylesheet" href="~/css/Usuario/login.css">
 
 <title>Login Page</title>
-<style>
-    body {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f8f9fa;
-        margin: 0;
-    }
-
-    .custom_container {
-        max-width: 500px;
-        /* Ajuste conforme necessário */
-        padding: 50px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-
-    }
-
-    .custom_logo {
-        max-width: 500px;
-        /* Ajuste conforme necessário */
-        padding: 20px;
-        border: none;
-        text-align: center;
-
-    }
-
-    .form-outline {
-        margin-bottom: 100px;
-    }
-
-    .form-outline input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ced4da;
-        border-radius: 50px;
-    }
-
-    .form-check {
-        display: flex;
-        align-items: center;
-    }
-
-    .form-check-input {
-        margin-right: 5px;
-    }
-
-    .text-center {
-        text-align: center;
-    }
-
-    .btn-primary {
-        width: 100%;
-    }
-</style>
-
-
 
 <body>
-    <div class="custom_container">
+    <div id="custom_container" class="custom_container">
         <div class="tab-content">
             <h1 class="custom_logo "><a href="/Home/Index#hero">Távila Victória</a></h1>
             <!-- Pills navs -->
@@ -120,15 +66,13 @@
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <input type="email" id="loginEmail" class="form-control" placeholder="Digite seu Email"
-                                style="width:400px;" required />
+                            <input type="email" id="loginEmail" class="form-control" placeholder="Digite seu Email" required />
 
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <input type="password" id="loginPassword" class="form-control" required
-                                placeholder="Digite sua senha" />
+                            <input type="password" id="loginPassword" class="form-control" required placeholder="Digite sua senha" />
 
                         </div>
 
@@ -148,8 +92,7 @@
                         </div>
 
                         <!-- Submit button -->
-                        <button type="button" class="nav-link active btn btn-primary btn-block"
-                            style="margin-left: auto;" onclick="ConsultaLogin ()">Entrar</button>
+                        <button type="button" id="send-button" class="nav-link active btn btn-primary btn-block" onclick="ConsultaLogin ()">Entrar</button>
 
                         <!-- Register buttons -->
 
@@ -190,3 +133,4 @@
         });
     }
 </script>
+</html>
