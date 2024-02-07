@@ -5,65 +5,44 @@
       "PackagePath": "staticwebassets\\SGU.bundle.scp.css"
     },
     {
-<<<<<<< HEAD
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\bemvindo.css",
-      "PackagePath": "staticwebassets\\css\\bemvindo.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\bemvindo.css",
+      "PackagePath": "staticwebassets\\css\\Home\\bemvindo.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\depoimentos.css",
-      "PackagePath": "staticwebassets\\css\\depoimentos.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\depoimentos.css",
+      "PackagePath": "staticwebassets\\css\\Home\\depoimentos.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\faleconoso.css",
-      "PackagePath": "staticwebassets\\css\\faleconoso.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\faleconoso.css",
+      "PackagePath": "staticwebassets\\css\\Home\\faleconoso.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\galeria.css",
-      "PackagePath": "staticwebassets\\css\\galeria.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\galeria.css",
+      "PackagePath": "staticwebassets\\css\\Home\\galeria.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\header.css",
-      "PackagePath": "staticwebassets\\css\\header.css"
-=======
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/bemvindo.css",
-      "PackagePath": "staticwebassets/css/Home/bemvindo.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\header.css",
+      "PackagePath": "staticwebassets\\css\\Home\\header.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/depoimentos.css",
-      "PackagePath": "staticwebassets/css/Home/depoimentos.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\servicos.css",
+      "PackagePath": "staticwebassets\\css\\Home\\servicos.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/faleconoso.css",
-      "PackagePath": "staticwebassets/css/Home/faleconoso.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\sobre.css",
+      "PackagePath": "staticwebassets\\css\\Home\\sobre.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/galeria.css",
-      "PackagePath": "staticwebassets/css/Home/galeria.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\sobrenos.css",
+      "PackagePath": "staticwebassets\\css\\Home\\sobrenos.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/header.css",
-      "PackagePath": "staticwebassets/css/Home/header.css"
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Usuario\\cliente.css",
+      "PackagePath": "staticwebassets\\css\\Usuario\\cliente.css"
     },
     {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/servicos.css",
-      "PackagePath": "staticwebassets/css/Home/servicos.css"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobre.css",
-      "PackagePath": "staticwebassets/css/Home/sobre.css"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobrenos.css",
-      "PackagePath": "staticwebassets/css/Home/sobrenos.css"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/cliente.css",
-      "PackagePath": "staticwebassets/css/Usuario/cliente.css"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/login.css",
-      "PackagePath": "staticwebassets/css/Usuario/login.css"
->>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Usuario\\login.css",
+      "PackagePath": "staticwebassets\\css\\Usuario\\login.css"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\index.css",
@@ -74,33 +53,8 @@
       "PackagePath": "staticwebassets\\css\\response.css"
     },
     {
-<<<<<<< HEAD
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\servicos.css",
-      "PackagePath": "staticwebassets\\css\\servicos.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\sobre.css",
-      "PackagePath": "staticwebassets\\css\\sobre.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\sobrenos.css",
-      "PackagePath": "staticwebassets\\css\\sobrenos.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\style.css",
-      "PackagePath": "staticwebassets\\css\\style.css"
-    },
-    {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
-=======
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/favicon.ico",
-      "PackagePath": "staticwebassets/img/favicon.ico"
->>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga1.jpg",
@@ -139,45 +93,40 @@
       "PackagePath": "staticwebassets\\img\\gallery\\ga9.png"
     },
     {
-<<<<<<< HEAD
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\github\\mobile.gif",
+      "PackagePath": "staticwebassets\\img\\github\\mobile.gif"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\github\\mobile.png",
+      "PackagePath": "staticwebassets\\img\\github\\mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\github\\notebook.png",
+      "PackagePath": "staticwebassets\\img\\github\\notebook.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\btn-top.png",
+      "PackagePath": "staticwebassets\\img\\icons\\btn-top.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\hist1.png",
+      "PackagePath": "staticwebassets\\img\\icons\\hist1.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\icons8-acima-dentro-de-um-círculo-80.png",
+      "PackagePath": "staticwebassets\\img\\icons\\icons8-acima-dentro-de-um-círculo-80.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
+      "PackagePath": "staticwebassets\\img\\icons\\icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\met1.png",
+      "PackagePath": "staticwebassets\\img\\icons\\met1.png"
+    },
+    {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\imgEdt.png",
       "PackagePath": "staticwebassets\\img\\imgEdt.png"
-=======
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/mobile.gif",
-      "PackagePath": "staticwebassets/img/github/mobile.gif"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/mobile.png",
-      "PackagePath": "staticwebassets/img/github/mobile.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/notebook.png",
-      "PackagePath": "staticwebassets/img/github/notebook.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/btn-top.png",
-      "PackagePath": "staticwebassets/img/icons/btn-top.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/hist1.png",
-      "PackagePath": "staticwebassets/img/icons/hist1.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-acima-dentro-de-um-círculo-80.png",
-      "PackagePath": "staticwebassets/img/icons/icons8-acima-dentro-de-um-círculo-80.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
-      "PackagePath": "staticwebassets/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/met1.png",
-      "PackagePath": "staticwebassets/img/icons/met1.png"
-    },
-    {
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log1.jpg",
-      "PackagePath": "staticwebassets/img/log1.jpg"
->>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\imgExc.png",
@@ -196,25 +145,12 @@
       "PackagePath": "staticwebassets\\img\\servicos\\c1.png"
     },
     {
-<<<<<<< HEAD
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\servicos\\c2.png",
       "PackagePath": "staticwebassets\\img\\servicos\\c2.png"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\servicos\\c3.png",
       "PackagePath": "staticwebassets\\img\\servicos\\c3.png"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\sobre\\hist1.png",
-      "PackagePath": "staticwebassets\\img\\sobre\\hist1.png"
-=======
-      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/js/main.js",
-      "PackagePath": "staticwebassets/js/main.js"
->>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\sobre\\met1.png",
-      "PackagePath": "staticwebassets\\img\\sobre\\met1.png"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\js\\main.js",
@@ -541,7 +477,6 @@
       "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.css"
     },
     {
-<<<<<<< HEAD
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js"
     },
@@ -550,346 +485,7 @@
       "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\animate.css\\animate.compat.css",
-      "PackagePath": "staticwebassets\\vendor\\animate.css\\animate.compat.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\animate.css\\animate.css",
-      "PackagePath": "staticwebassets\\vendor\\animate.css\\animate.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\animate.css\\animate.min.css",
-      "PackagePath": "staticwebassets\\vendor\\animate.css\\animate.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.esm.js"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\all.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\all.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\all.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\all.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\brands.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\brands.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\brands.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\brands.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\fontawesome.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\fontawesome.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\fontawesome.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\fontawesome.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\regular.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\regular.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\regular.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\regular.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\solid.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\solid.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\solid.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\solid.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\svg-with-js.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\svg-with-js.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\svg-with-js.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\svg-with-js.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\v4-font-face.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\v4-font-face.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\v4-font-face.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\v4-font-face.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\v4-shims.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\v4-shims.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\v4-shims.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\v4-shims.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\v5-font-face.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\v5-font-face.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\css\\v5-font-face.min.css",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\css\\v5-font-face.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\webfonts\\fa-v4compatibility.ttf",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\webfonts\\fa-v4compatibility.ttf"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\fontawesome-free\\webfonts\\fa-v4compatibility.woff2",
-      "PackagePath": "staticwebassets\\vendor\\fontawesome-free\\webfonts\\fa-v4compatibility.woff2"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\purecounter\\purecounter_vanilla.js",
-      "PackagePath": "staticwebassets\\vendor\\purecounter\\purecounter_vanilla.js"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\purecounter\\purecounter_vanilla.js.map",
-      "PackagePath": "staticwebassets\\vendor\\purecounter\\purecounter_vanilla.js.map"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.css",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.css"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.eot",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.eot"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.glyph.json",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.glyph.json"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.less",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.less"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.svg",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.svg"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.symbol.svg",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.symbol.svg"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.ttf",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.ttf"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.woff",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.woff"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\vendor\\remixicon\\remixicon.woff2",
-      "PackagePath": "staticwebassets\\vendor\\remixicon\\remixicon.woff2"
-    },
-    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SGU.Microsoft.AspNetCore.StaticWebAssets.props",
-=======
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SGU.Microsoft.AspNetCore.StaticWebAssets.props",
->>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
