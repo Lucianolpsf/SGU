@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 
 
@@ -93,9 +94,17 @@
 <section id="services" class="services">
 
     <div class="container">        
+=======
+﻿@model IEnumerable<SGC.Models.UsuarioVM>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+<section id="clientes-page-section">
+    <div id="client-maneger" class="container">        
+>>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
 
         <div class="add-user-button">
-            <h1 class="section-title" style="padding: 80px; max-height:20px;">Gerenciamento de Clientes</h1>
+            <h1 class="section-title cliente-title-maneger">Gerenciamento de Clientes</h1>
             <br />
         </div>
 
@@ -115,8 +124,11 @@
             </div>
         </div>
 
-        <div class="table-container">
-            <table id="TbClientes">
+        <div class="table-container table-responsive">
+            <table id="TbClientes" class="table">
+                <colgroup>
+                    <col class="tc-nome">
+                </colgroup>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -125,8 +137,8 @@
                         <th>Email</th>
                         <th>Telefone</th>
                         <th>Tipo de Usuário</th>
-                        <th style="color: blue; text-align: center;">Editar</th>
-                        <th style="color: red; text-align: center;">Excluir</th>
+                        <th class="editar">Editar</th>
+                        <th class="excluir">Excluir</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -160,7 +172,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Editar Cliente</h5>
+                    <h1 class="modal-title" id="exampleModalLabel">Editar Cliente</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -202,7 +214,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Excluir Cliente</h5>
+                    <h1 class="modal-title" id="exampleModalLabel">Excluir Cliente</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

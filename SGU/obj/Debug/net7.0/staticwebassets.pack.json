@@ -5,6 +5,7 @@
       "PackagePath": "staticwebassets\\SGU.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\bemvindo.css",
       "PackagePath": "staticwebassets\\css\\bemvindo.css"
     },
@@ -23,6 +24,46 @@
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\header.css",
       "PackagePath": "staticwebassets\\css\\header.css"
+=======
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/bemvindo.css",
+      "PackagePath": "staticwebassets/css/Home/bemvindo.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/depoimentos.css",
+      "PackagePath": "staticwebassets/css/Home/depoimentos.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/faleconoso.css",
+      "PackagePath": "staticwebassets/css/Home/faleconoso.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/galeria.css",
+      "PackagePath": "staticwebassets/css/Home/galeria.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/header.css",
+      "PackagePath": "staticwebassets/css/Home/header.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/servicos.css",
+      "PackagePath": "staticwebassets/css/Home/servicos.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobre.css",
+      "PackagePath": "staticwebassets/css/Home/sobre.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobrenos.css",
+      "PackagePath": "staticwebassets/css/Home/sobrenos.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/cliente.css",
+      "PackagePath": "staticwebassets/css/Usuario/cliente.css"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/login.css",
+      "PackagePath": "staticwebassets/css/Usuario/login.css"
+>>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\index.css",
@@ -33,6 +74,7 @@
       "PackagePath": "staticwebassets\\css\\response.css"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\servicos.css",
       "PackagePath": "staticwebassets\\css\\servicos.css"
     },
@@ -55,6 +97,10 @@
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
+=======
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/favicon.ico",
+      "PackagePath": "staticwebassets/img/favicon.ico"
+>>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga1.jpg",
@@ -93,8 +139,45 @@
       "PackagePath": "staticwebassets\\img\\gallery\\ga9.png"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\imgEdt.png",
       "PackagePath": "staticwebassets\\img\\imgEdt.png"
+=======
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/mobile.gif",
+      "PackagePath": "staticwebassets/img/github/mobile.gif"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/mobile.png",
+      "PackagePath": "staticwebassets/img/github/mobile.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/notebook.png",
+      "PackagePath": "staticwebassets/img/github/notebook.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/btn-top.png",
+      "PackagePath": "staticwebassets/img/icons/btn-top.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/hist1.png",
+      "PackagePath": "staticwebassets/img/icons/hist1.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-acima-dentro-de-um-círculo-80.png",
+      "PackagePath": "staticwebassets/img/icons/icons8-acima-dentro-de-um-círculo-80.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
+      "PackagePath": "staticwebassets/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/met1.png",
+      "PackagePath": "staticwebassets/img/icons/met1.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log1.jpg",
+      "PackagePath": "staticwebassets/img/log1.jpg"
+>>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\imgExc.png",
@@ -113,6 +196,7 @@
       "PackagePath": "staticwebassets\\img\\servicos\\c1.png"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\servicos\\c2.png",
       "PackagePath": "staticwebassets\\img\\servicos\\c2.png"
     },
@@ -123,6 +207,10 @@
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\sobre\\hist1.png",
       "PackagePath": "staticwebassets\\img\\sobre\\hist1.png"
+=======
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
+>>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\sobre\\met1.png",
@@ -453,6 +541,7 @@
       "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.css"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js"
     },
@@ -798,6 +887,9 @@
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SGU.Microsoft.AspNetCore.StaticWebAssets.props",
+=======
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SGU.Microsoft.AspNetCore.StaticWebAssets.props",
+>>>>>>> 23ed6073b1a923b2ba7dbcfbeca75426427ddb99
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {

@@ -1,5 +1,4 @@
-SGU/bin
-SGU/obj
+
 SGU/SGU.csproj
 
 # Created by https://www.toptal.com/developers/gitignore/api/csharp,visualstudiocode,visualstudio
@@ -598,6 +597,3 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudiocode,visualstudio
-
-SGU/*
-SGU/*

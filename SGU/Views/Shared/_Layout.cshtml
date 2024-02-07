@@ -91,7 +91,6 @@
         </div>
     </header><!-- End Header -->
 
-
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
@@ -122,9 +121,6 @@
         </div>
     </footer><!-- End Footer -->
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
-    </a>
 
     <script src="~/lib/swiper/swiper-bundle.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -132,7 +128,7 @@
 
     <script src="~/js/main.js"></script>
     <script src="~/js/validate.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @* @await RenderSectionAsync("Scripts", required: false) *@
 </body>
 
 </html>
