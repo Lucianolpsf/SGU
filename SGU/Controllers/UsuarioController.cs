@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Linq;
-using SGC.Models;
+using SGU.Models;
 using SGU.ORM;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using SGU.ConfSistema;
-using SGU.Models;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering; // Certifique-se de adicionar a referência a este namespace
 
@@ -46,7 +45,7 @@ namespace SGC.ConfProjeto
         {
             try
             {
-                SGU.ConfSistema.ConfUsuario cu = new SGU.ConfSistema.ConfUsuario(_context);
+                ConfUsuario cu = new ConfUsuario(_context);
                 var usuario = cu.ConsultarUsuario(Email, Senha);
 
                 if (usuario != null)
@@ -87,7 +86,7 @@ namespace SGC.ConfProjeto
                     return Json(new { success = false, message = resultado.Message });
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // Trate exceções, se necessário
                 return Json(new { success = false, message = "Erro ao processar a solicitação" });

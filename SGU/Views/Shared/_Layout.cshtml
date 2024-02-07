@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] Távilla Victória</title>
 
-    <!-- bibliotecas usadas-->
+    
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
-
-    <!-- styles personalizados-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
     <link rel="stylesheet" href="~/css/index.css">
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-ico">
+       
 
 </head>
 
 <body>
-    <!-- Template Main JS File -->
+    
     @* <script src="~/lib/js/main.js"></script> *@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
@@ -47,14 +45,8 @@
                     <li class="nav-item">
                         <a href="/Home/Index#contact">Fale Conosco</a>
                     </li>
-                    <!-- Comando para restringir itens do menu de acordo com usuario-->
-                    @if (Context.Session.GetString("UsuarioTipo") == "administrador")
-                    {
-                        <li class="nav-item">
-                            <a href="/Usuario/Index" class="clientes">Clientes</a>
-                        </li>
-                    }
-
+                   
+                    
                     @if (Context.Session.GetString("UsuarioTipo") == "administrador" ||
                     Context.Session.GetString("UsuarioTipo") ==
                     "cliente")
@@ -66,13 +58,21 @@
                                 @Context.Session.GetString("UsuarioNome")
                             </a>
                             <div class="dropdown-menu" aria-labelledby="usuarioDropdown">
-                                <!-- Adicione aqui os itens do dropdow
-                                            <a class="dropdown-item" href="#">Opção 1</a>
-                                            <a class="dropdown-item" href="#">Opção 2</a>
-                                            <div class="dropdown-divider"></div>
-                                            -->
+                              
+                                @if (Context.Session.GetString("UsuarioTipo") == "administrador")
+                                {
 
-                                <a class="dropdown-item .sair" href="/Usuario/Logout" onclick="fazerLogout()">Sair</a>
+                                    <a class="nav-item" href="/Usuario/Index" class="clientes">Clientes</a>
+                           
+                                }
+                                @if (Context.Session.GetString("UsuarioTipo") == "administrador")
+                                {
+
+                                    <a href="/Agendamento/Index" class="nav-item">Agendamento</a>
+                          
+                                }
+                                    <a class="nav-item" .sair" href="/Usuario/Logout" onclick="fazerLogout()">Sair</a>
+
                             </div>
                         </li>
                     }

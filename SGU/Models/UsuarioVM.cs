@@ -1,4 +1,4 @@
-﻿namespace SGC.Models
+﻿namespace SGU.Models
 {
     public class UsuarioVM
     {

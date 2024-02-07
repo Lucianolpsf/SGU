@@ -1,20 +1,7 @@
 ﻿
 
-@model IEnumerable<SGC.Models.UsuarioVM>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/SGU.styles.css" asp-append-version="true" />
-<link href="~/Tema/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-<link href="~/Tema/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-<link href="~/Tema/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="~/Tema/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="~/Tema/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="~/Tema/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="~/Tema/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-<link href="~/Tema/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+@model IEnumerable<SGU.Models.UsuarioVM>
 
 <style>
     .table-sm tbody tr {
@@ -104,6 +91,7 @@
 </style>
 
 <section id="services" class="services">
+
     <div class="container">        
 
         <div class="add-user-button">
@@ -167,7 +155,6 @@
             </table>
         </div>
     </div>
-
 
     <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -289,13 +276,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/Tema/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="~/Tema/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/Tema/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="~/Tema/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="~/Tema/assets/vendor/php-email-form/validate.js"></script>
-    <script src="~/Tema/assets/js/main.js"></script>
 
     <script>
 
@@ -423,7 +403,8 @@
             });
         }
 
-        function ExcluirUsuario() {
+        function ExcluirUsuario() 
+        {
             // Obtenha o ID do usuário a ser excluído
             var userId = $('#IdExc').val();
 

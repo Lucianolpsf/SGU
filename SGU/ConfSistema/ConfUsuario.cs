@@ -1,6 +1,4 @@
-﻿using SGC.ConfProjeto;
-using SGC.Models;
-using SGU.Models;
+﻿using SGU.Models;
 using SGU.ORM;
 using System.Runtime.CompilerServices;
 
@@ -28,7 +26,6 @@ namespace SGU.ConfSistema
                 return null;
             }
         }
-
         public List<UsuarioVM> ListarUsuarios()
         {
             List<UsuarioVM> ListaUsuarios = new List<UsuarioVM>();
@@ -60,7 +57,6 @@ namespace SGU.ConfSistema
                 return null;
             }
         }
-
         public OperacaoResultado InserirUsuario(string nome, string email, string senha, string telefone, string tipoUsuario)
         {
             OperacaoResultado resultado = new OperacaoResultado();
