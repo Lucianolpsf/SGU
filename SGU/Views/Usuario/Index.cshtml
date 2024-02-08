@@ -1,9 +1,11 @@
-﻿@model IEnumerable<SGC.Models.UsuarioVM>
+@model IEnumerable<SGU.Models.UsuarioVM>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
+
 <section id="clientes-page-section">
     <div id="client-maneger" class="container">        
+
 
         <div class="add-user-button">
             <h1 class="section-title cliente-title-maneger">Gerenciamento de Clientes</h1>
@@ -69,7 +71,6 @@
             </table>
         </div>
     </div>
-
 
     <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -189,7 +190,8 @@
             </div>
         </div>
     </div>
-
+    
+    
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script>
@@ -318,7 +320,8 @@
             });
         }
 
-        function ExcluirUsuario() {
+        function ExcluirUsuario() 
+        {
             // Obtenha o ID do usuário a ser excluído
             var userId = $('#IdExc').val();
 

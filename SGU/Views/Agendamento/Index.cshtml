@@ -1,0 +1,817 @@
+﻿@using System.Text.Json
+
+@model IEnumerable<SGU.Models.ViewAgendamentoVM>
+@{
+    // Obter o valor da variável de sessão UsuarioTipo
+    var usuarioId = Context.Session.GetString("UsuarioId");
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<style>
+    .table-sm tbody tr {
+        height: 3px;
+    }
+
+    .error-message {
+        color: #e74c3c; /* Vermelho escuro */
+        margin-top: 5px;
+    }
+
+    .loader-modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+    }
+
+    .loader-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .loader-text {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .loader-image {
+        background-color: transparent;
+    }
+
+
+
+    .table-container {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #ddd;
+        table-layout: fixed;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        position: sticky;
+        top: 0;
+    }
+
+    thead tr {
+        position: sticky;
+        top: 0;
+        background-color: #f2f2f2;
+        z-index: 2; /* Garante que o cabeçalho fique sobre as células ao rolar */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+
+<section id="services" class="services">
+
+    <div class="container">        
+
+        <div class="add-user-button">
+            <h1 class="section-title" style="padding: 80px; max-height:20px;">Gerenciamento de Agendamento</h1>
+            <br />
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group mb-4">
+                        <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Agendamentos..." aria-label="Filtrar" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
+                    <button class="btn btn-success btn-lg" onclick="limparFormulario()" data-bs-toggle="modal" data-bs-target="#InserirAgendamento">
+                        <i class="fa fa-plus"></i> Adicionar Agendamento
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="TbAgendamentos">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Email</th>                        
+                        <th>Telefone</th>
+                        <th>Agendado para a Data</th>
+                        <th>Horario</th>
+                        <th>Tecnica</th>
+                        <th>Valor</th>
+                        <th>Confirmação</th>
+                        <th>Satisfação</th>
+                        <th style="color: blue; text-align: center;">Editar</th>
+                        <th style="color: red; text-align: center;">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Nome</td>
+                            <td>@item.Email</td>
+                            <td>@item.Telefone</td>                            
+                            <td>@item.AgendarData</td>
+                            <td>@item.Horario</td>
+                            <td>@item.Tecnica</td>
+                            <td>@item.Valor</td>              
+                            <td>@item.Confirmacao</td>
+                            <td>@item.Satisfacao</td>
+                            <td class="text-center">
+                                <button class="btn btn-default" onclick="definirEdt('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone', '@item.AgendarData', '@item.Horario', '@item.Tecnica', '@item.Valor', '@item.Confirmacao', '@item.Satisfacao');" data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                
+                                <button class="btn btn-default" onclick="definirExc('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone', '@item.AgendarData', '@item.Horario', '@item.Tecnica', '@item.Valor', '@item.Confirmacao', '@item.Satisfacao')" data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
+                                    <i class="fa fa-trash text-danger"></i>
+                                </button>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <div class="modal fade" id="ExcluirAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir Agendamento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                         <div class="mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="ExcNome" class="form-control"  readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="ExcEmail" class="form-control"  readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="ExcTel" class="form-control"  readonly>
+
+                        </div>
+                       
+                        <div class="mb-3">
+                            <label for="telefone">Data do Agendamento</label>
+                            <input type="text" id="ExcData" class="form-control"  readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Horario</label>
+                            <input type="text" id="ExcHorario" class="form-control" readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Tecnica</label>
+                            <input type="text" id="ExcTecnica" class="form-control" readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Valor</label>
+                            <input type="text" id="ExcVal" class="form-control"  readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Confirmação</label>
+                            <input type="text" id="ExcConf" class="form-control"  readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Satisfação</label>
+                            <input type="text" id="ExcSat" class="form-control"  readonly>
+
+                        </div>
+                        <input type="hidden" id="IdExc" class="form-control"  readonly>
+
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" onclick="ExcluirUsuario()" class="btn btn-primary">Excluir</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="InserirAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" style="max-height: 80vh;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Agendamento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                         <div class="mb-3 d-flex align-items-center">
+                            <input type="text" id="TxtId" class="form-check-input" value="10:00" style="margin-right: 10px;" disabled>
+                        </div>
+                        
+                        <div class="mb-3 d-flex align-items-center">
+                            <div class="col-sm-4">
+                                <input id="data_agdt" type="text" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento()">
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            @Html.DropDownList("DropServicoT", ViewBag.lstTipoServicos, "Escolha o Tipo Serviço", new { @class = "chosen-select form-control", @style = "width:420px;" })
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            @Html.DropDownList("DropServico", ViewBag.lstSevicos, "Escolha o Serviço", new { @class = "chosen-select form-control", @style = "width:420px;" })
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk08" class="form-check-input" value="08:00" style="margin-right: 10px;" disabled>
+                            <label class="form-check-label" for="chk08">Atendimento das 8:00</label>
+                            <span id="Span08" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk10" class="form-check-input" value="10:00" style="margin-right: 10px;" disabled>
+                            <label class="form-check-label" for="chk10">Atendimento das 10:00</label>
+                            <span id="Span10" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk13" class="form-check-input" value="13:00" style="margin-right: 10px;" disabled>
+                            <label class="form-check-label" for="chk13">Atendimento das 13:00</label>
+                            <span id="Span13" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk15" class="form-check-input" value="15:00" style="margin-right: 10px;" disabled>
+                            <label class="form-check-label" for="chk15">Atendimento das 15:00</label>
+                            <span id="Span15" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk17" class="form-check-input" value="17:00" style="margin-right: 10px;" disabled>
+                            <label class="form-check-label" for="chk17">Atendimento das 17:00</label>
+                            <span id="Span17" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk19" class="form-check-input" value="19:00" style="margin-right: 10px;" disabled>
+                            <label class="form-check-label" for="chk19">Atendimento das 19:00</label>
+                            <span id="Span19" style="color:red;"></span>
+                        </div>
+
+                        <input type="hidden" id="IdEdt" value="">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="InserirAgendamentos()">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EditarAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir Agendamento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="EdtNome" class="form-control" readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="EdtEmail" class="form-control" readonly>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="EdtTel" class="form-control" readonly>
+
+                        </div> 
+                        <div class="mb-3">
+                            <label for="telefone">Data do agendamento</label>
+                            <input type="text" id="EdtData" class="form-control" readonly>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefone">Horario</label>
+                            <input type="text" id="EdtHorario" class="form-control" readonly>
+
+                        </div>                       
+                        <div class="mb-3">
+                            <label for="telefone">Tecnica</label>
+                            @Html.DropDownList("DropServico", ViewBag.lstSevicos, "Escolha o Serviço", new { @class = "chosen-select form-control", @style = "width:420px;" })
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefone">Valor</label>
+                            <input type="text" id="EdtVal" class="form-control" readonly>       
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Confirmação</label>
+                            <input type="text" id="EdtConf" class="form-control" readonly>                        </div>
+                        <div class="mb-3">
+                            <label for="telefone">Satisfação</label>
+                            <input type="text" id="EdtSat" class="form-control" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <div class="mb-3 d-flex align-items-center">
+                                <br />
+                                <input type="checkbox" id="chkR" value="08:00" style="margin-right: 10px;">
+                                <label for="chkR">Reagendamento</label>
+                            </div>
+                        </div>
+                        <div id="divCampos" style="border: 2px solid #000; padding: 10px; margin: 10px;">
+                            <div class="mb-3">
+                                <input id="data_a" type="text" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamentoEdt()">
+                            </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                @Html.DropDownList("DropHorario", ViewBag.lstHorarios, "Escolha o Horario", new { @class = "chosen-select form-control", @style = "width:420px;" })
+                            </div>
+                        </div>
+                        <input type="hidden" id="IdEdt" class="form-control" readonly>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" onclick="consultarAgendamentoEdt()" class="btn btn-primary">Atualizar</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        
+
+        var listaOriginalHorario;      
+
+        $(document).ready(function () {  
+            
+
+            listaOriginalHorario = @Html.Raw(JsonSerializer.Serialize(ViewBag.lstHorarios));
+            document.getElementById('divCampos').style.display = 'none';
+
+            // Adiciona o ouvinte de evento ao checkbox
+            document.getElementById('chkR').addEventListener('change', function () {
+                var display = this.checked ? 'block' : 'none';
+                document.getElementById('divCampos').style.display = display;
+            });
+        });
+        
+        function atualizarDropDownHorario(lista) {
+            // Limpar o DropDownList
+            $("#DropHorario").empty();
+
+            // Adicionar os itens ao DropDownList
+            $.each(lista, function (index, item) {
+                $("#DropHorario").append($("<option></option>")
+                    .attr("value", item.Value)
+                    .text(item.Text));
+            });
+        }
+
+        function definirExc(id, Nome, Email, Telefone, Data, Horario, Tecnica, Val, Conf, Sat) {
+          
+            $('#IdExc').val(id);
+            $('#ExcNome').val(Nome);
+            $('#ExcEmail').val(Email);
+            $('#ExcTel').val(Telefone)
+            $('#ExcData').val(Data)
+            $('#ExcHorario').val(Horario)
+            $('#ExcTecnica').val(Tecnica)
+            $('#ExcVal').val(Val)
+            $('#ExcConf').val(Conf)
+            $('#ExcSat').val(Sat)
+
+        }
+
+        function definirEdt(id, Nome, Email, Telefone,Data, Horario, Tecnica, Val, Conf, Sat) {
+            document.addEventListener("DOMContentLoaded", function () {
+                var dropServico = document.getElementById('DropServico');
+                var valorSelecionado = "Mapeamento";
+
+                // Verifica se o dropdown foi encontrado
+                if (dropServico) {
+                    // Itera sobre as opções do dropdown
+                    for (var i = 0; i < dropServico.options.length; i++) {
+                        // Verifica se o valor da opção é igual ao valor que você deseja selecionar
+                        if (dropServico.options[i].value === valorSelecionado) {
+                            // Define a opção como selecionada
+                            dropServico.selectedIndex = i;
+                            break; // Encerra o loop assim que a opção é encontrada
+                        }
+                    }
+                } else {
+                    console.log("O dropdown não foi encontrado.");
+                }
+            });
+            document.getElementById('chkR').addEventListener('change', function () {
+                var display = this.checked ? 'block' : 'none';
+                document.getElementById('divCampos').style.display = display;
+            });
+            
+            $('#IdEdt').val(id);
+            $('#EdtNome').val(Nome);
+            $('#EdtEmail').val(Email);
+            $('#EdtTel').val(Telefone)        
+            $('#EdtData').val(Data)
+            $('#EdtHorario').val(Horario)
+            $('#EdtVal').val(Val)
+            $('#EdtConf').val(Conf)
+            $('#EdtSat').val(Sat)
+
+            
+        }
+
+        function adicionarNovoItemSelecionadoAoDropDown(value, text) 
+        {
+            // Adicionar o novo item ao DropDownList
+            $("#DropHorario").append($("<option></option>")
+                .attr("value", value)
+                .text(text));
+
+            // Selecionar o novo item no DropDownList
+            $("#DropHorario").val(value);
+        }
+
+        $(document).ready(function () {
+          
+            $("#filtro").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#TbAgendamentos tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        flatpickr("#data_agdt", {
+            enableTime: false, // Se você quiser incluir a hora, mude para true
+            dateFormat: "d/m/Y", // Formato da data exibida
+            locale: "pt", // Localização em português
+            // Você pode adicionar mais opções conforme necessário
+        });
+
+        flatpickr("#data_a", {
+            enableTime: false, // Se você quiser incluir a hora, mude para true
+            dateFormat: "d/m/Y", // Formato da data exibida
+            locale: "pt", // Localização em português
+            // Você pode adicionar mais opções conforme necessário
+        });
+
+        function consultarAgendamento() {
+            ativarCheckboxes()
+            limparTextosSpans()
+            desmarcarCheckboxes()
+
+            var data = $("#data_agdt").val(); 
+           console.log(data)
+            $.ajax({
+                type: "GET",
+                url: "/Agendamento/ConsultarAgendamento",
+                data: { data: data },
+                success: function (response) {
+                   
+                    response.forEach(function (item) {
+                        console.log(item.horario);
+                       
+                        switch (item.horario) {
+                            case "08:00:00":
+                                $("#chk08").prop("disabled", true);
+                                $("#Span08").text("Horario Indisponivel");
+                                break;
+                            case "10:00:00":
+                                $("#chk10").prop("disabled", true);
+                                $("#Span10").text("Horario Indisponivel");
+                                break;
+                            case "13:00:00":
+                                $("#chk13").prop("disabled", true);
+                                $("#Span13").text("Horario Indisponivel");
+                                break;
+                            case "15:00:00":
+                                $("#chk15").prop("disabled", true);
+                                $("#Span15").text("Horario Indisponivel");
+                                break;
+                            case "17:00:00":
+                                $("#chk17").prop("disabled", true);
+                                $("#Span17").text("Horario Indisponivel");
+                                break;
+                            case "19:00:00":
+                                $("#chk19").prop("disabled", true);
+                                $("#Span19").text("Horario Indisponivel");
+                                break;
+                            default:
+                               break;
+                        }
+                    });
+                },
+                error: function (error) {
+                    // Manipule os erros aqui
+                    console.error("Erro na requisição AJAX:", error);
+                }
+            });
+        }
+
+        function consultarAgendamentoEdt() 
+        {
+            ativarCheckboxesEdt();
+            limparTextosSpansEdt();
+            desmarcarCheckboxesEdt();
+            var data = $("#data_a").val();
+
+            // Resetar o DropDownList para a lista original
+            if (listaOriginalHorario) {
+                atualizarDropDownHorario(listaOriginalHorario);
+            }
+
+            $.ajax({
+                type: "GET",
+                url: "/Agendamento/ConsultarAgendamento",
+                data: { data: data },
+                success: function (response) {
+                    response.forEach(function (item) {
+                        switch (item.horario) {
+                            case "08:00:00":
+                                $("#DropHorario option[value='8']").remove();
+                                break;
+                            case "10:00:00":
+                                $("#DropHorario option[value='10']").remove();
+                                break;
+                            case "13:00:00":
+                                $("#DropHorario option[value='13']").remove();
+                                break;
+                            case "15:00:00":
+                                $("#DropHorario option[value='15']").remove();
+                                break;
+                            case "17:00:00":
+                                $("#DropHorario option[value='17']").remove();
+                                break;
+                            case "19:00:00":
+                                $("#DropHorario option[value='19']").remove();
+                                break;
+                            default:
+                                break;
+                        }
+                    });
+                },
+                error: function (error) {
+                    // Manipule os erros aqui
+                    console.error("Erro na requisição AJAX:", error);
+                }
+            });
+        }
+
+        function ativarCheckboxes() {
+            // Desabilita a propriedade disabled dos checkboxes
+            document.querySelectorAll('input[type="checkbox"]').forEach(function (checkbox) {
+                checkbox.disabled = false;
+            });
+        }
+        
+        function ativarCheckboxesEdt() {
+            // Desabilita a propriedade disabled dos checkboxes dentro do formulário "EditarAgendamento"
+            document.querySelectorAll('#EditarAgendamento input[type="checkbox"]').forEach(function (checkbox) {
+                checkbox.disabled = false;
+            });
+        }
+
+        function limparTextosSpans() {
+            // Obtém todos os elementos <span> dentro do formulário
+            var spans = document.querySelectorAll('#InserirAgendamento span');
+
+            // Itera sobre os spans e define seu conteúdo como vazio
+            spans.forEach(function (span) {
+                span.textContent = '';
+            });
+        }
+
+        function limparTextosSpansEdt() {
+            // Obtém todos os elementos <span> dentro do formulário
+            var spans = document.querySelectorAll('#EditarAgendamento span');
+
+            // Itera sobre os spans e define seu conteúdo como vazio
+            spans.forEach(function (span) {
+                span.textContent = '';
+            });
+        }
+
+        function desmarcarCheckboxes() {
+            // Obtém todos os elementos <input type="checkbox"> dentro do formulário
+            var checkboxes = document.querySelectorAll('#InserirAgendamento input[type="checkbox"]');
+
+            // Itera sobre os checkboxes e desmarca todos
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+            });
+        }
+
+        function desmarcarCheckboxesEdt() {
+            // Obtém todos os elementos <input type="checkbox"> dentro do formulário
+            var checkboxes = document.querySelectorAll('#EditarAgendamento input[type="checkbox"]');
+
+            // Itera sobre os checkboxes e desmarca todos
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+            });
+        }
+
+        function limparFormulario() 
+        {
+            var usuarioId = "@Context.Session.GetString("UsuarioId")";
+            document.getElementById("TxtId").value = usuarioId;
+            
+            // Limpar campos de texto
+            document.querySelectorAll('#InserirAgendamento input[type="text"]').forEach(function (input) {
+                input.value = '';
+            });
+
+            // Limpar campos de seleção
+            document.querySelectorAll('#InserirAgendamento select').forEach(function (select) {
+                select.selectedIndex = 0;
+            });
+
+            // Desmarcar checkboxes
+           
+            // Limpar spans
+            document.querySelectorAll('#InserirAgendamento span').forEach(function (span) {
+                span.textContent = '';
+            });
+
+            document.querySelectorAll('#InserirAgendamento input[type="checkbox"]').forEach(function (checkbox) {
+                checkbox.checked = false;
+                checkbox.disabled = true;
+            });
+            
+        }
+        
+        function obterDataHoraFormatada() {
+            // Obtém a data e hora atuais
+            var dataHoraAtual = new Date();
+
+            // Formata a data e hora para o formato desejado (por exemplo, "yyyy-MM-dd HH:mm:ss.fff")
+            var dataHoraFormatada = dataHoraAtual.getFullYear() + "-" +
+                ("0" + (dataHoraAtual.getMonth() + 1)).slice(-2) + "-" +
+                ("0" + dataHoraAtual.getDate()).slice(-2) + " " +
+                ("0" + dataHoraAtual.getHours()).slice(-2) + ":" +
+                ("0" + dataHoraAtual.getMinutes()).slice(-2) + ":" +
+                ("0" + dataHoraAtual.getSeconds()).slice(-2) + "." +
+                ("00" + dataHoraAtual.getMilliseconds()).slice(-3);
+
+            // Retorna a data e hora formatada
+            return dataHoraFormatada;
+        }
+
+        function InserirAgendamentos() {
+
+            var id = "@usuarioId";
+            var dataC = obterDataHoraFormatada();
+            var data = $("#data_agdt").val();
+            var servico = $("#DropServico").val();
+            var atendimentos = [];
+            if ($("#chk08").prop("checked")) atendimentos.push($("#chk08").val());
+            if ($("#chk10").prop("checked")) atendimentos.push($("#chk10").val());
+            if ($("#chk13").prop("checked")) atendimentos.push($("#chk13").val());
+            if ($("#chk15").prop("checked")) atendimentos.push($("#chk15").val());
+            if ($("#chk17").prop("checked")) atendimentos.push($("#chk17").val());
+            if ($("#chk19").prop("checked")) atendimentos.push($("#chk19").val());
+
+
+            if (!id) {
+                alert("Por favor, Insira aum Id");
+                return;
+            }
+
+            if (!dataC) {
+                alert("Por favor, selecione uma data de cadastro");
+                return;
+            }
+            if (!data) {
+                alert("Por favor, selecione uma data para o agendamento.");
+                return;
+            }
+            if (!servico) {
+                alert("Por favor, selecione o serviço.");
+                return;
+            }
+            if (atendimentos.length === 0) {
+                alert("Por favor, selecione pelo menos um horário para o agendamento.");
+                return; // Retorna da função se nenhum horário foi selecionado
+            }
+            var dados = {
+                id: id,
+                dataC: dataC,
+                data: data,
+                servico: servico,
+                atendimentos: atendimentos
+            };
+            console.log(dados)
+            $.ajax({
+                url: '/Agendamento/InserirAgendamentos',
+                type: "POST",
+                dataType: "json",
+                data: dados,
+                success: function (response) {
+                    if (response.success) {
+                        alert("Agendamento(s) cadastrado(s) com sucesso!");
+                        $('#InserirAgendamento').modal('hide'); // Substitua 'seuModal' pelo ID do seu modal
+                        // Atualizar a página
+                        location.reload();
+                    } else {
+                        alert("Erro ao cadastrar agendamento(s).");
+                    }
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    alert("Erro ao cadastrar agendamento(s): " + errorThrown);
+                }
+            });
+        }
+
+        function ExcluirUsuario() {
+
+            
+            var userId = $('#IdExc').val();           
+           
+            $.ajax({
+                type: "POST",
+                url: "/Agendamento/ExcluirAgendamento", 
+                dataType: "json",
+                data: { id: userId },                
+                success: function (response) {
+                  
+                    if (response.success) {
+
+                        alert("Agendamento excluido com sucesso!");
+                        $('#ExcluirAgendamento').modal('hide');                                     
+                        location.reload();
+
+                    } else {
+
+                        alert("Falha ao excluir usuário.");
+                    }
+                },
+                error: function () 
+                {
+
+                    alert("Erro na requisição AJAX.");
+                }
+            });
+        }
+
+    </script>
+
+</section>

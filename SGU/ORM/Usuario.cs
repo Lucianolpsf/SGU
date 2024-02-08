@@ -11,13 +11,11 @@ public partial class Usuario
 
     public string Email { get; set; } = null!;
 
-    public string Telefone { get; set; } = null!;
-
     public string Senha { get; set; } = null!;
 
-    public string? TipoUsuario { get; set; }
+    public string Telefone { get; set; } = null!;
+
+    public string TipoUsuario { get; set; } = null!;
 
     public virtual ICollection<Agendamento> Agendamentos { get; } = new List<Agendamento>();
-
-    public virtual ICollection<Comentario> Comentarios { get; } = new List<Comentario>();
 }

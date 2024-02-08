@@ -17,13 +17,13 @@ public partial class SguContext : DbContext
 
     public virtual DbSet<Agendamento> Agendamentos { get; set; }
 
-    public virtual DbSet<Comentario> Comentarios { get; set; }
-
     public virtual DbSet<Servico> Servicos { get; set; }
 
     public virtual DbSet<TipoServico> TipoServicos { get; set; }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
+
+    public virtual DbSet<ViewAgendamento> ViewAgendamentos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
@@ -33,7 +33,7 @@ public partial class SguContext : DbContext
     {
         modelBuilder.Entity<Agendamento>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Agendame__3214EC27509ADEBE");
+            entity.HasKey(e => e.Id).HasName("PK__Agendame__3214EC279E683848");
 
             entity.ToTable("Agendamento");
 
@@ -48,34 +48,16 @@ public partial class SguContext : DbContext
 
             entity.HasOne(d => d.FkServico).WithMany(p => p.Agendamentos)
                 .HasForeignKey(d => d.FkServicoId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_Agendamento_3");
+                .HasConstraintName("FK_Agendamento_Serviço");
 
             entity.HasOne(d => d.FkUsuario).WithMany(p => p.Agendamentos)
                 .HasForeignKey(d => d.FkUsuarioId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_Agendamento_2");
-        });
-
-        modelBuilder.Entity<Comentario>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__Comentar__3214EC277DAA7612");
-
-            entity.ToTable("Comentario");
-
-            entity.Property(e => e.Id).HasColumnName("ID");
-            entity.Property(e => e.Descricao).HasColumnType("text");
-            entity.Property(e => e.FkUsuarioId).HasColumnName("fk_Usuario_ID");
-
-            entity.HasOne(d => d.FkUsuario).WithMany(p => p.Comentarios)
-                .HasForeignKey(d => d.FkUsuarioId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_Comentario_2");
+                .HasConstraintName("FK_Agendamento_Usuario");
         });
 
         modelBuilder.Entity<Servico>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Servico__3214EC27F0BC9C7A");
+            entity.HasKey(e => e.Id).HasName("PK__Servico__3214EC27A367F3C1");
 
             entity.ToTable("Servico");
 
@@ -87,13 +69,12 @@ public partial class SguContext : DbContext
 
             entity.HasOne(d => d.FkTipoServico).WithMany(p => p.Servicos)
                 .HasForeignKey(d => d.FkTipoServicoId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_Servico_2");
+                .HasConstraintName("FK_Servico_TipoServico");
         });
 
         modelBuilder.Entity<TipoServico>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__TipoServ__3214EC27191D8551");
+            entity.HasKey(e => e.Id).HasName("PK__TipoServ__3214EC2745FCCEB2");
 
             entity.ToTable("TipoServico");
 
@@ -105,16 +86,13 @@ public partial class SguContext : DbContext
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Usuario__3214EC274ABA570E");
-
             entity.ToTable("Usuario");
 
-            entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.Email)
-                .HasMaxLength(200)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.Nome)
-                .HasMaxLength(200)
+                .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.Senha)
                 .HasMaxLength(50)
@@ -123,6 +101,28 @@ public partial class SguContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.TipoUsuario)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<ViewAgendamento>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("ViewAgendamentos");
+
+            entity.Property(e => e.AgendarData).HasColumnType("date");
+            entity.Property(e => e.Email)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Nome)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Tecnica)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Telefone)
                 .HasMaxLength(50)
                 .IsUnicode(false);
         });
