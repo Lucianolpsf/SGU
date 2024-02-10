@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\buildMultiTargeting\SGU.props" />
+  <Import Project="../buildMultiTargeting/SGU.props" />
 </Project>

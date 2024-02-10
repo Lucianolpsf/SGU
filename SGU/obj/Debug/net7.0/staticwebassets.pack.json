@@ -1,503 +1,503 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\SGU.bundle.scp.css",
-      "PackagePath": "staticwebassets\\SGU.bundle.scp.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/obj/Debug/net7.0/scopedcss/projectbundle/SGU.bundle.scp.css",
+      "PackagePath": "staticwebassets/SGU.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\bemvindo.css",
-      "PackagePath": "staticwebassets\\css\\Home\\bemvindo.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/bemvindo.css",
+      "PackagePath": "staticwebassets/css/Home/bemvindo.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\depoimentos.css",
-      "PackagePath": "staticwebassets\\css\\Home\\depoimentos.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/depoimentos.css",
+      "PackagePath": "staticwebassets/css/Home/depoimentos.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\faleconoso.css",
-      "PackagePath": "staticwebassets\\css\\Home\\faleconoso.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/faleconoso.css",
+      "PackagePath": "staticwebassets/css/Home/faleconoso.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\galeria.css",
-      "PackagePath": "staticwebassets\\css\\Home\\galeria.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/galeria.css",
+      "PackagePath": "staticwebassets/css/Home/galeria.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\header.css",
-      "PackagePath": "staticwebassets\\css\\Home\\header.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/header.css",
+      "PackagePath": "staticwebassets/css/Home/header.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\servicos.css",
-      "PackagePath": "staticwebassets\\css\\Home\\servicos.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/servicos.css",
+      "PackagePath": "staticwebassets/css/Home/servicos.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\sobre.css",
-      "PackagePath": "staticwebassets\\css\\Home\\sobre.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobre.css",
+      "PackagePath": "staticwebassets/css/Home/sobre.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Home\\sobrenos.css",
-      "PackagePath": "staticwebassets\\css\\Home\\sobrenos.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Home/sobrenos.css",
+      "PackagePath": "staticwebassets/css/Home/sobrenos.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Usuario\\cliente.css",
-      "PackagePath": "staticwebassets\\css\\Usuario\\cliente.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/cliente.css",
+      "PackagePath": "staticwebassets/css/Usuario/cliente.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\Usuario\\login.css",
-      "PackagePath": "staticwebassets\\css\\Usuario\\login.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/Usuario/login.css",
+      "PackagePath": "staticwebassets/css/Usuario/login.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\index.css",
-      "PackagePath": "staticwebassets\\css\\index.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/index.css",
+      "PackagePath": "staticwebassets/css/index.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\css\\response.css",
-      "PackagePath": "staticwebassets\\css\\response.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/css/response.css",
+      "PackagePath": "staticwebassets/css/response.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\favicon.ico",
-      "PackagePath": "staticwebassets\\img\\favicon.ico"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/favicon.ico",
+      "PackagePath": "staticwebassets/img/favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga1.jpg",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga1.jpg"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga1.jpg",
+      "PackagePath": "staticwebassets/img/gallery/ga1.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga2.png",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga2.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga2.png",
+      "PackagePath": "staticwebassets/img/gallery/ga2.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga3.jpg",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga3.jpg"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga3.jpg",
+      "PackagePath": "staticwebassets/img/gallery/ga3.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga4.jpg",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga4.jpg"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga4.jpg",
+      "PackagePath": "staticwebassets/img/gallery/ga4.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga5.jpg",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga5.jpg"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga5.jpg",
+      "PackagePath": "staticwebassets/img/gallery/ga5.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga6.png",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga6.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga6.png",
+      "PackagePath": "staticwebassets/img/gallery/ga6.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga7.jpg",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga7.jpg"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga7.jpg",
+      "PackagePath": "staticwebassets/img/gallery/ga7.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga8.png",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga8.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga8.png",
+      "PackagePath": "staticwebassets/img/gallery/ga8.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\gallery\\ga9.png",
-      "PackagePath": "staticwebassets\\img\\gallery\\ga9.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/gallery/ga9.png",
+      "PackagePath": "staticwebassets/img/gallery/ga9.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\github\\mobile.gif",
-      "PackagePath": "staticwebassets\\img\\github\\mobile.gif"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/mobile.gif",
+      "PackagePath": "staticwebassets/img/github/mobile.gif"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\github\\mobile.png",
-      "PackagePath": "staticwebassets\\img\\github\\mobile.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/mobile.png",
+      "PackagePath": "staticwebassets/img/github/mobile.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\github\\notebook.png",
-      "PackagePath": "staticwebassets\\img\\github\\notebook.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/github/notebook.png",
+      "PackagePath": "staticwebassets/img/github/notebook.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\btn-top.png",
-      "PackagePath": "staticwebassets\\img\\icons\\btn-top.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/btn-top.png",
+      "PackagePath": "staticwebassets/img/icons/btn-top.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\hist1.png",
-      "PackagePath": "staticwebassets\\img\\icons\\hist1.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/hist1.png",
+      "PackagePath": "staticwebassets/img/icons/hist1.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\icons8-acima-dentro-de-um-círculo-80.png",
-      "PackagePath": "staticwebassets\\img\\icons\\icons8-acima-dentro-de-um-círculo-80.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-acima-dentro-de-um-círculo-80.png",
+      "PackagePath": "staticwebassets/img/icons/icons8-acima-dentro-de-um-círculo-80.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
-      "PackagePath": "staticwebassets\\img\\icons\\icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png",
+      "PackagePath": "staticwebassets/img/icons/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-96.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\icons\\met1.png",
-      "PackagePath": "staticwebassets\\img\\icons\\met1.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/icons/met1.png",
+      "PackagePath": "staticwebassets/img/icons/met1.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\imgEdt.png",
-      "PackagePath": "staticwebassets\\img\\imgEdt.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/imgEdt.png",
+      "PackagePath": "staticwebassets/img/imgEdt.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\imgExc.png",
-      "PackagePath": "staticwebassets\\img\\imgExc.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/imgExc.png",
+      "PackagePath": "staticwebassets/img/imgExc.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\log1.jpg",
-      "PackagePath": "staticwebassets\\img\\log1.jpg"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log1.jpg",
+      "PackagePath": "staticwebassets/img/log1.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\log2.png",
-      "PackagePath": "staticwebassets\\img\\log2.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log2.png",
+      "PackagePath": "staticwebassets/img/log2.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\servicos\\c1.png",
-      "PackagePath": "staticwebassets\\img\\servicos\\c1.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/servicos/c1.png",
+      "PackagePath": "staticwebassets/img/servicos/c1.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\servicos\\c2.png",
-      "PackagePath": "staticwebassets\\img\\servicos\\c2.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/servicos/c2.png",
+      "PackagePath": "staticwebassets/img/servicos/c2.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\img\\servicos\\c3.png",
-      "PackagePath": "staticwebassets\\img\\servicos\\c3.png"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/servicos/c3.png",
+      "PackagePath": "staticwebassets/img/servicos/c3.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\js\\main.js",
-      "PackagePath": "staticwebassets\\js\\main.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\js\\validate.js",
-      "PackagePath": "staticwebassets\\js\\validate.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/js/validate.js",
+      "PackagePath": "staticwebassets/js/validate.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap-icons/bootstrap-icons.css",
+      "PackagePath": "staticwebassets/lib/bootstrap-icons/bootstrap-icons.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
-      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.json"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap-icons/bootstrap-icons.json",
+      "PackagePath": "staticwebassets/lib/bootstrap-icons/bootstrap-icons.json"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap-icons/bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap-icons/bootstrap-icons.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
-      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.scss"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap-icons/bootstrap-icons.scss",
+      "PackagePath": "staticwebassets/lib/bootstrap-icons/bootstrap-icons.scss"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
-      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap-icons/fonts/bootstrap-icons.woff",
+      "PackagePath": "staticwebassets/lib/bootstrap-icons/fonts/bootstrap-icons.woff"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
-      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap-icons/fonts/bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets/lib/bootstrap-icons/fonts/bootstrap-icons.woff2"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bootstrap"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\css\\animations.css",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\css\\animations.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/css/animations.css",
+      "PackagePath": "staticwebassets/lib/boxicons/css/animations.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\css\\boxicons.css",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\css\\boxicons.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/css/boxicons.css",
+      "PackagePath": "staticwebassets/lib/boxicons/css/boxicons.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\css\\boxicons.min.css",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\css\\boxicons.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/css/boxicons.min.css",
+      "PackagePath": "staticwebassets/lib/boxicons/css/boxicons.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\css\\transformations.css",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\css\\transformations.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/css/transformations.css",
+      "PackagePath": "staticwebassets/lib/boxicons/css/transformations.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.eot"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/fonts/boxicons.eot",
+      "PackagePath": "staticwebassets/lib/boxicons/fonts/boxicons.eot"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.svg"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/fonts/boxicons.svg",
+      "PackagePath": "staticwebassets/lib/boxicons/fonts/boxicons.svg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.ttf"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/fonts/boxicons.ttf",
+      "PackagePath": "staticwebassets/lib/boxicons/fonts/boxicons.ttf"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/fonts/boxicons.woff",
+      "PackagePath": "staticwebassets/lib/boxicons/fonts/boxicons.woff"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
-      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff2"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/boxicons/fonts/boxicons.woff2",
+      "PackagePath": "staticwebassets/lib/boxicons/fonts/boxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\glightbox\\css\\glightbox.css",
-      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\glightbox.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/glightbox/css/glightbox.css",
+      "PackagePath": "staticwebassets/lib/glightbox/css/glightbox.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\glightbox\\css\\glightbox.min.css",
-      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\glightbox.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/glightbox/css/glightbox.min.css",
+      "PackagePath": "staticwebassets/lib/glightbox/css/glightbox.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\glightbox\\css\\plyr.css",
-      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\plyr.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/glightbox/css/plyr.css",
+      "PackagePath": "staticwebassets/lib/glightbox/css/plyr.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\glightbox\\css\\plyr.min.css",
-      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\plyr.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/glightbox/css/plyr.min.css",
+      "PackagePath": "staticwebassets/lib/glightbox/css/plyr.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\glightbox\\js\\glightbox.js",
-      "PackagePath": "staticwebassets\\lib\\glightbox\\js\\glightbox.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/glightbox/js/glightbox.js",
+      "PackagePath": "staticwebassets/lib/glightbox/js/glightbox.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\glightbox\\js\\glightbox.min.js",
-      "PackagePath": "staticwebassets\\lib\\glightbox\\js\\glightbox.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/glightbox/js/glightbox.min.js",
+      "PackagePath": "staticwebassets/lib/glightbox/js/glightbox.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
-      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.css"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/swiper/swiper-bundle.min.css",
+      "PackagePath": "staticwebassets/lib/swiper/swiper-bundle.min.css"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/swiper/swiper-bundle.min.js",
+      "PackagePath": "staticwebassets/lib/swiper/swiper-bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js.map"
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/lib/swiper/swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/swiper/swiper-bundle.min.js.map"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SGU.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SGU.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.SGU.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.SGU.props",
       "PackagePath": "build\\SGU.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.SGU.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.SGU.props",
       "PackagePath": "buildMultiTargeting\\SGU.props"
     },
     {
-      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.SGU.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.SGU.props",
       "PackagePath": "buildTransitive\\SGU.props"
     }
   ],
