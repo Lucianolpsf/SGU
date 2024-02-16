@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\SGU.csproj": {}
+    "C:\\Users\\Gomes\\Desktop\\KARYTHON\\projeto\\SGU\\SGU\\SGU.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\SGU.csproj": {
+    "C:\\Users\\Gomes\\Desktop\\KARYTHON\\projeto\\SGU\\SGU\\SGU.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\SGU.csproj",
+        "projectUniqueName": "C:\\Users\\Gomes\\Desktop\\KARYTHON\\projeto\\SGU\\SGU\\SGU.csproj",
         "projectName": "SGU",
-        "projectPath": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\SGU.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\Documents\\SGU\\SGU\\obj\\",
+        "projectPath": "C:\\Users\\Gomes\\Desktop\\KARYTHON\\projeto\\SGU\\SGU\\SGU.csproj",
+        "packagesPath": "C:\\Users\\Gomes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gomes\\Desktop\\KARYTHON\\projeto\\SGU\\SGU\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,6 +75,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
