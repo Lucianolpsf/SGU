@@ -11,9 +11,10 @@
     <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     
-    <link rel="stylesheet" href="~/css/index.css">
+    
        
 
 </head>
@@ -31,19 +32,29 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li class="nav-item">
-                        <a href="/Home/Index#hero">Inicio</a>
+                        <a href="/Home/Index#hero">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/Home/Index#about">Sobre</a>
+                        <a href="/Home/Index#about">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/Home/Index#services">Serviços</a>
+                        <a href="/Home/Index#services">
+                            <i class="fa fa-gavel" aria-hidden="true"></i>
+                            Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/Home/Index#gallery">Galeria</a>
+                        <a href="/Home/Index#gallery">
+                            <i class="fa fa-window-restore" aria-hidden="true"></i>
+                            Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/Home/Index#contact">Fale Conosco</a>
+                        <a href="/Home/Index#contact">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            Fale Conosco</a>
                     </li>
                    
                     
@@ -61,17 +72,38 @@
                               
                                 @if (Context.Session.GetString("UsuarioTipo") == "administrador")
                                 {
-
-                                    <a class="nav-item" href="/Usuario/Index" class="clientes">Clientes</a>
-                           
+                                    <a class="nav-itemb clientes" href="/Usuario/Index">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                        Clientes(s)
+                                    </a>
+                                    <a href="/Agendamento/Index" class="nav-item clientes">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        Agendamento(s)
+                                    </a>
+                                    <a href="/Servico/Index" class="nav-item clientes">
+                                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                                    Serviço(s)</a>
+                                    <a href="/Manutencao/Index" class="nav-item clientes">
+                                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                                    Manutenção</a>
+                                    <a href="/Agendamento/Index" class="nav-item clientes">
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    Relatorio(s)</a>
+                                    <a href="/Agendamento/Index" class="nav-item clientes">
+                                        <i class="fa fa-signal" aria-hidden="true"></i>
+                                    DashBord</a>
                                 }
-                                @if (Context.Session.GetString("UsuarioTipo") == "administrador")
+                                @if (Context.Session.GetString("UsuarioTipo") == "cliente")
                                 {
 
-                                    <a href="/Agendamento/Index" class="nav-item">Agendamento</a>
+                                    <a href="/Agendamento/IndexCliente" class="nav-item clientes">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    Agendamento(s)</a>
                           
                                 }
-                                    <a class="nav-item" .sair" href="/Usuario/Logout" onclick="fazerLogout()">Sair</a>
+                                    <a class="nav-item" .sair" href="/Usuario/Logout" onclick="fazerLogout()">
+                                    <i class="fa fa-user-times" aria-hidden="true"></i>
+                                    Sair</a>
 
                             </div>
                         </li>
@@ -80,7 +112,9 @@
                     {
                         <!-- Se o usuário não estiver autenticado, exibe o link de login -->
                         <li class="nav-item">
-                            <a href="/Usuario/Login">Login</a>
+                            <a href="/Usuario/Login">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                Login</a>
                         </li>
                     }
 

@@ -24,4 +24,6 @@ public partial class ViewAgendamento
     public bool? Confirmacao { get; set; }
 
     public int? Satisfacao { get; set; }
+
+    public int Expr1 { get; set; }
 }

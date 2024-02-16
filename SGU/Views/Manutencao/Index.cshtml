@@ -1,0 +1,370 @@
+@model IEnumerable<SGU.Models.ManutencaoVM>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+<section id="clientes-page-section">
+
+    <div id="client-maneger" class="container"> 
+
+        <div class="add-user-button">
+            <h1 class="section-title cliente-title-maneger">Gerenciamento de Manutenções</h1>
+            <br />
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group mb-4">
+                        <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Serviços..." aria-label="Filtrar" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
+                    <button class="btn btn-success btn-lg" onclick="" data-bs-toggle="modal" data-bs-target="#InserirManutencao">
+                        <i class="fa fa-plus"></i> Adicionar Manutenção
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container table-responsive">
+            <table id="TbClientes" class="table">
+                <colgroup>
+                    <col class="tc-nome">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Tecnica</th>
+                        <th>Valor</th>
+                        <th>Prazo</th>
+                        <th>Serviço Associado</th>
+                        <th class="editar">Editar</th>
+                        <th class="excluir">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr id="@item.Id">
+                                <td>@item.Id</td>
+                                <td>@item.Tecnica</td>
+                                <td>@item.Valor</td>
+                                <td>@item.Prazo</td>
+                                <td>@item.FkServico</td>
+                                <td class="text-center">
+                                    <button class="btn btn-default" onclick="definirEdt('@item.Id','@item.Tecnica','@item.Valor','@item.Prazo','@item.FkServico')" data-bs-toggle="modal" data-bs-target="#EditarManutencao">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-default" onclick="definirExc('@item.Id', '@item.Tecnica', '@item.Valor', '@item.Prazo', '@item.FkServico')" data-bs-toggle="modal" data-bs-target="#ExcluirManutencao">
+                                        <i class="fa fa-trash text-danger"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="12" class="text-center">Nenhuma Manutenção encontrada.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="InserirManutencao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Manutenção</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="mb-3">
+                            <input id="txtTecnica" type="text" class="form-control" placeholder="Digite o nome da Tecnica">
+                        </div>
+
+                        <div class="mb-3">
+                            <input id="txtValor" type="text" class="form-control" placeholder="Digite o Preço">
+                        </div>   
+
+                        <div class="mb-3">
+                            <input id="txtPrazo" type="text" class="form-control" placeholder="Digite o Prazo">
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            @Html.DropDownList("DropServico", ViewBag.lstSevicosM, "Escolha o Serviço", new { @class = "chosen-select form-control", @style = "width:420px;" })
+                        </div>
+                        <input type="hidden" id="IdEdt" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="InserirManutencao()">Adicionar</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EditarManutencao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Manutenção</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="EdtTecnica">Tecnica</label>
+                            <input id="EdtTecnica" type="text" class="form-control" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="EdtValor">Preço</label>
+                            <input id="EdtValor" type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="EdtPrazo">Prazo para aplicação</label>
+                            <input id="EdtPrazo" type="text" class="form-control">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="EdtPrazo">Serviço associado</label><br />
+                            @Html.DropDownList("DropServicoEdt", ViewBag.lstSevicosM, "Escolha o Serviço", new { @class = "chosen-select form-control", @style = "width:420px;" })
+                        </div>
+                        <input type="hidden" id="IdEdt" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="AlterarManutencao()">Atualizar</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ExcluirManutencao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir Manutenção</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="EdtTecnica">Tecnica</label>
+                            <input id="ExcTecnica" type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="EdtValor">Preço</label>
+                            <input id="ExcValor" type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="EdtPrazo">Prazo para aplicação</label>
+                            <input id="ExcPrazo" type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="EdtPrazo">Prazo para aplicação</label>
+                            <input id="ExcServico" type="text" class="form-control">
+                        </div>
+                       
+                        <input type="hidden" id="IdExc" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="ExcluirManutencao()">Excluir</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+
+        function definirEdt(id,tecnica,preco,prazo,IdSer) {
+
+            $('#IdEdt').val(id);
+            $('#EdtTecnica').val(tecnica);
+            $('#EdtValor').val(preco);
+            $('#EdtPrazo').val(prazo);
+            $('#DropServicoEdt option').each(function () {
+                if ($(this).val() === IdSer) {
+                    $(this).prop('selected', true);
+                }
+            });
+        }
+
+        function definirExc(id, tecnica, preco, prazo, IdSer) {
+
+            $('#IdExc').val(id);
+            $('#ExcTecnica').val(tecnica);
+            $('#ExcValor').val(preco);
+            $('#ExcPrazo').val(prazo);
+            $('#ExcServico').val(IdSer);
+        }
+
+        function InserirManutencao()
+        {
+            
+            var tecnica = $('#txtTecnica').val();
+            var valor = $('#txtValor').val();
+            var prazo = $('#txtPrazo').val();
+            var idSer = $('#DropServico option:selected').val();
+            // Validar cada campo individualmente
+            if (!tecnica) {
+                alert("Por favor, preencha o campo Técnica.");
+                return;
+            }
+
+            if (!valor) {
+                alert("Por favor, preencha o campo Preço.");
+                return;
+            }
+
+            if (!prazo) {
+                alert("Por favor, preencha o campo Prazo.");
+                return;
+            }
+
+            if (!idSer) {
+                alert("Por favor, selecione um Serviço.");
+                return;
+            }
+            var dados = {
+
+                tecnica: tecnica,
+                valor: valor,
+                prazo: prazo,
+                idSer: idSer
+            };
+
+            // Faça a chamada AJAX
+            $.ajax({
+                url: '/Manutencao/InserirManutencao',
+                type: "POST",
+                dataType: "json",
+                data: dados,
+                success: function (resultado) {
+                    if (resultado.success) {
+                        alert(resultado.message);  // Exibe a mensagem de sucesso
+                        // Fecha o modal
+                        $('#InserirServico').modal('hide');
+                        // Recarrega a págInserirUsuarioina
+                        location.reload();
+                    } else {
+                        alert(resultado.message);  // Exibe a mensagem de falha
+                    }
+                },
+                error: function () {
+                    alert('Erro na requisição AJAX.');
+                }
+            });
+        }
+
+        function AlterarManutencao() {
+
+            var id = $("#IdEdt").val();
+            var tecnica = $('#EdtTecnica').val();
+            var valor = $('#EdtValor').val();
+            var prazo = $('#EdtPrazo').val();
+            var idSer = $('#DropServicoEdt option:selected').val(); 
+            
+            if (!tecnica) {
+                alert("Por favor, preencha o campo Técnica.");
+                return;
+            }
+
+            if (!valor) {
+                alert("Por favor, preencha o campo Preço.");
+                return;
+            }
+
+            if (!prazo) {
+                alert("Por favor, preencha o campo Prazo.");
+                return;
+            }
+
+            if (!idSer) {
+                alert("Por favor, selecione um Serviço.");
+                return;
+            }
+            var dados = {
+                id: id,
+                tecnica: tecnica,
+                valor: valor,
+                prazo: prazo,
+                idSer: idSer
+            };
+            $.ajax({
+                type: "POST",
+                url: "/Manutencao/AlterarManutencao",
+                dataType: "json",
+                data: dados,
+                success: function (response) {
+
+                    if (response.success) {
+                        alert("Manutencão alterada com sucesso!");
+                        $('#EditarServico').modal('hide');
+                        location.reload();
+                    } else {
+                        alert("Falha ao alterar Manutencção.");
+                    }
+                },
+                error: function (error) {
+
+                    console.error("Erro na chamada AJAX:", error);
+                }
+            });
+        }
+
+        function ExcluirManutencao() {
+          
+            var userId = $('#IdExc').val();
+
+
+            $.ajax({
+                type: "POST",
+                url: "/Manutencao/ExcluirManutencao",
+                data: { id: userId },
+                dataType: "json",
+                success: function (response) {
+
+                    if (response.success) {
+
+                        $('#ExcluirManutencao').modal('hide');
+                        alert("Manutenção excluida com sucesso!");                       
+                        location.reload();
+
+                    } else {
+
+                        alert("Falha ao excluir Manutenção.");
+                    }
+                },
+                error: function () {
+                    alert("Erro na requisição AJAX.");
+                }
+            });
+        }
+
+    </script>
+
+</section>
