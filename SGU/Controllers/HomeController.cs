@@ -17,14 +17,9 @@ namespace SGU.Controllers
 
         public IActionResult Index()
         {
-       
+            ViewBag.UsuarioTipo = HttpContext.Session.GetString("UsuarioTipo");
             return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+        }       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

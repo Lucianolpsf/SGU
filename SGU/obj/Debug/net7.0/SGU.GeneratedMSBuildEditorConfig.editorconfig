@@ -18,8 +18,31 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Administrador\Documents\SGU\SGU
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< HEAD
+=======
+[C:/Users/Administrador/Documents/SGU/SGU/Views/Agendamento/Agendamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cQWdlbmRhbWVudG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Documents/SGU/SGU/Views/Agendamento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Documents/SGU/SGU/Views/Agendamento/IndexCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cSW5kZXhDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> agendamento
 [C:/Users/Administrador/Documents/SGU/SGU/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Documents/SGU/SGU/Views/Manutencao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudXRlbmNhb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrador/Documents/SGU/SGU/Views/Servico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydmljb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrador/Documents/SGU/SGU/Views/Shared/Error.cshtml]

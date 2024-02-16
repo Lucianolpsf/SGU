@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SGU")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+759f9ea54bc552a7c81db7033f6fe10b576c0d35")]
+>>>>>>> agendamento
 [assembly: System.Reflection.AssemblyProductAttribute("SGU")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SGU")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

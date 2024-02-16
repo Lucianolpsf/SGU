@@ -17,9 +17,9 @@ public partial class SguContext : DbContext
 
     public virtual DbSet<Agendamento> Agendamentos { get; set; }
 
-    public virtual DbSet<Servico> Servicos { get; set; }
+    public virtual DbSet<Manutencao> Manutencaos { get; set; }
 
-    public virtual DbSet<TipoServico> TipoServicos { get; set; }
+    public virtual DbSet<Servico> Servicos { get; set; }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
@@ -55,6 +55,18 @@ public partial class SguContext : DbContext
                 .HasConstraintName("FK_Agendamento_Usuario");
         });
 
+        modelBuilder.Entity<Manutencao>(entity =>
+        {
+            entity.ToTable("Manutencao");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.FkServico).HasColumnName("fk_Servico");
+            entity.Property(e => e.Tecnica)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Valor).HasColumnType("decimal(18, 0)");
+        });
+
         modelBuilder.Entity<Servico>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Servico__3214EC27A367F3C1");
@@ -62,24 +74,7 @@ public partial class SguContext : DbContext
             entity.ToTable("Servico");
 
             entity.Property(e => e.Id).HasColumnName("ID");
-            entity.Property(e => e.FkTipoServicoId).HasColumnName("fk_TipoServico_ID");
             entity.Property(e => e.Tecnica)
-                .HasMaxLength(50)
-                .IsUnicode(false);
-
-            entity.HasOne(d => d.FkTipoServico).WithMany(p => p.Servicos)
-                .HasForeignKey(d => d.FkTipoServicoId)
-                .HasConstraintName("FK_Servico_TipoServico");
-        });
-
-        modelBuilder.Entity<TipoServico>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__TipoServ__3214EC2745FCCEB2");
-
-            entity.ToTable("TipoServico");
-
-            entity.Property(e => e.Id).HasColumnName("ID");
-            entity.Property(e => e.Tipo)
                 .HasMaxLength(50)
                 .IsUnicode(false);
         });

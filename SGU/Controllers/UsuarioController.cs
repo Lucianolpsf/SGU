@@ -21,8 +21,8 @@ namespace SGC.ConfProjeto
         {
             List<SelectListItem> tipoUsuario = new List<SelectListItem>
             {
-                new SelectListItem { Value = "1", Text = "Administrador" },
-                new SelectListItem { Value = "2", Text = "Cliente" },
+                new SelectListItem { Value = "1", Text = "administrador" },
+                new SelectListItem { Value = "2", Text = "cliente" },
            
             // Adicione mais itens conforme necessário
             };

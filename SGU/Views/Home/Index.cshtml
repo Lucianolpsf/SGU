@@ -1,6 +1,7 @@
 ﻿@{
-    ViewData["Title"] = "";
+    ViewData["Title"] = "";    
 }
+
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
@@ -110,6 +111,7 @@
             </div>
 
             <div class="row">
+
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="icon-box">
                         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -164,6 +166,7 @@
                     </div>
 
                 </div>
+
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                     <div class="icon-box">
                         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -271,14 +274,13 @@
                             fios naturais.</p>
                     </div>
                 </div>
+
             </div>
             <div class="agendamento">
                 <!-- Botao so ira aparecer para usuario logado-->
-                @if (Context.Session.GetString("UsuarioTipo") == "administrador" ||
-                Context.Session.GetString("UsuarioTipo") == "Cliente")
-                {
-                    <a href="#"><button type="button" class="btn btn-warning btn-agendar">Agende seu atendimento 💋</button></a>
-                }
+
+                <button id="btn-agendar" type="button" class="btn btn-warning btn-agendar" onclick="verificarLogin() ">Agende seu atendimento 💋</button>
+              
             </div>
         </div>
     </section><!-- End Services Section -->
@@ -526,31 +528,38 @@
             selector: '.galelry-lightbox'
         });
     });
-    // Armazenar o valor da sessão em uma variável JavaScript
-    $(document).ready(function () {
-        var tipoUsuario = '@Context.Session.GetString("TipoUsuario")';
-
-        // Verifique se tipoUsuario não é nulo antes de imprimir
-    @* if (tipoUsuario !== null) {
-            console.log("Tipo de Usuário:", tipoUsuario);
-            } else {
-            console.log("Tipo de Usuário não definido.");
-            } *@
-
-        // Seu código adicional aqui...
-    });
+    
+    function Teste() 
+    {
+        var usuarioTipo = '@ViewBag.UsuarioTipo';
+        console.log("Tipo de Usuário:", usuarioTipo);
+    }
     function fazerLogout() {
         $.ajax({
             type: 'POST',
-            url: '/Usuario/Logout',  // Substitua 'NomeDoSeuController' pelo nome correto do seu controlador
+            url: '/Usuario/Logout',  
             success: function (data) {
-                // Sucesso: redirecione para a página desejada ou faça outras operações após o logout
-                // window.location.href = '/Home/Index';  // Substitua '/Home/Index' pela URL desejada
+              
             },
             error: function (error) {
-                // Trate erros, se necessário
+              
                 console.error('Erro ao fazer logout:', error);
             }
         });
+    }
+
+    function verificarLogin() {
+
+        var usuarioTipo = '@ViewBag.UsuarioTipo';
+        console.log("Tipo de Usuário:", usuarioTipo);
+
+
+        if (usuarioTipo !== null && usuarioTipo !== '') {
+            // Se o usuário estiver logado, redirecionar para a página A
+            window.location.href = "/Agendamento/Agendamento";
+        } else {
+            // Se o usuário não estiver logado, redirecionar para a página B
+            window.location.href = "/Usuario/Cadastro";
+        }
     }
 </script>

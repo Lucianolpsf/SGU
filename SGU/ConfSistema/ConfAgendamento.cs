@@ -50,6 +50,42 @@ namespace SGU.ConfSistema
                 return null;
             }
         }
+        public List<ViewAgendamentoVM> ListarAgendamentosCliente(int clienteId)
+        {
+            List<ViewAgendamentoVM> ListaAgendamento = new List<ViewAgendamentoVM>();
+
+            // Filtra os agendamentos com base no clienteId fornecido
+            var list = _context.ViewAgendamentos.Where(a => a.Expr1 == clienteId).ToList();
+
+            if (list.Count != 0)
+            {
+                foreach (var item in list)
+                {
+                    ViewAgendamentoVM LstVM = new ViewAgendamentoVM();
+                    {
+
+                        LstVM.Id = item.Id;
+                        LstVM.Nome = item.Nome;
+                        LstVM.Email = item.Email;
+                        LstVM.Telefone = item.Telefone;
+                        LstVM.AgendarData = item.AgendarData;
+                        LstVM.Horario = item.Horario;
+                        LstVM.Tecnica = item.Tecnica;
+                        LstVM.Valor = item.Valor;
+                        LstVM.Confirmacao = item.Confirmacao;
+                        LstVM.Satisfacao = item.Satisfacao;
+                    }
+
+                    ListaAgendamento.Add(LstVM);
+                }
+
+                return ListaAgendamento;
+            }
+            else
+            {
+                return null;
+            }
+        }
         public List<ServicoVM> ListarServicos()
         {
             List<ServicoVM> ListaServico = new List<ServicoVM>();
@@ -76,36 +112,7 @@ namespace SGU.ConfSistema
             {
                 return null;
             }
-        }
-        public List<TipoServicoVM> ListarTipoServico()
-        {
-            List<TipoServicoVM> ListaTipoServico = new List<TipoServicoVM>();
-
-            var list = _context.TipoServicos.ToList();
-
-            if (list.Count != 0)
-            {
-                foreach (var item in list)
-                {
-                    TipoServicoVM TipoServ = new TipoServicoVM();
-                    {
-                        
-                        TipoServ.Id= item.Id;
-                        TipoServ.Tipo = item.Tipo;
-                            
-                            
-                    }
-
-                    ListaTipoServico.Add(TipoServ);
-                }
-
-                return ListaTipoServico;
-            }
-            else
-            {
-                return null;
-            }
-        }
+        }       
         public List<Agendamento> ConsultarAgendamento(string datap)
         {
             List<Agendamento> ListaAgendamento = new List<Agendamento>();
@@ -173,6 +180,39 @@ namespace SGU.ConfSistema
             catch (Exception)
             {
 
+                return false;
+            }
+        }
+        public bool AlterarAgendamento(int id, string data, int servico , string horario)
+        { try
+            {
+               
+                Agendamento agt = _context.Agendamentos.Find(id);
+                DateTime dtHoraAgendamento;
+                if (agt != null)
+                {                   
+                   agt.Id = id;
+                    if (data != null) 
+                    {
+                        if (DateTime.TryParse(data, out dtHoraAgendamento))
+                        {
+                            agt.AgendarData = dtHoraAgendamento;
+                        }                        
+                    
+                    }
+                    if (horario != null) 
+                    {
+                        agt.Horario = TimeSpan.Parse(horario);
+                    }
+                   agt.FkServicoId = servico;
+                   _context.SaveChanges();
+                   return true;
+                }
+
+                return false; 
+            }
+            catch (Exception)
+            {              
                 return false;
             }
         }

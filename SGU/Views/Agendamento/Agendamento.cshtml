@@ -1,0 +1,350 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@model SGU.Models.UsuarioVM
+
+@{
+    Layout = null;
+}
+@{
+    // Obter o valor da variável de sessão UsuarioTipo
+    var usuarioId = Context.Session.GetString("UsuarioId");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- bibliotecas -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/lib/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/Usuario/login.css">
+
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div id="custom_container" class="custom_container">
+        <div class="tab-content">
+            <h1 class="custom_logo "><a href="/Home/Index#hero">Távila Victória</a></h1>
+            <!-- Pills navs -->
+            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+                        aria-controls="pills-login" aria-selected="true">Cadastro de agendamento</a>
+                </li>
+
+            </ul>
+            <!-- Pills navs -->
+            <!-- Pills content -->
+            <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                    <form>
+                        
+                        <div class="form-outline mb-4">
+                            <div class="mb-3 d-flex align-items-center">
+                                <input id="data_agdt" type="text" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento()">
+                            </div>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class=" form-outline mb-4">
+                            @Html.DropDownList("DropServico", ViewBag.AgtSevicos, "Escolha o Serviço", new { @class = "chosen-select form-control", @style = "width:420px;" })
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk08" class="form-check-input" value="08:00" style="margin-right: 10px;" data-group="horario" disabled>
+                            <label class="form-check-label" for="chk08">Atendimento das 8:00</label>
+                            <span id="Span08" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk10" class="form-check-input" value="10:00" style="margin-right: 10px;" data-group="horario" disabled>
+                            <label class="form-check-label" for="chk10">Atendimento das 10:00</label>
+                            <span id="Span10" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk13" class="form-check-input" value="13:00" style="margin-right: 10px;" data-group="horario" disabled>
+                            <label class="form-check-label" for="chk13">Atendimento das 13:00</label>
+                            <span id="Span13" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk15" class="form-check-input" value="15:00" style="margin-right: 10px;" data-group="horario" disabled>
+                            <label class="form-check-label" for="chk15">Atendimento das 15:00</label>
+                            <span id="Span15" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk17" class="form-check-input" value="17:00" style="margin-right: 10px;" data-group="horario" disabled>
+                            <label class="form-check-label" for="chk17">Atendimento das 17:00</label>
+                            <span id="Span17" style="color:red;"></span>
+                        </div>
+
+                        <div class="mb-3 d-flex align-items-center">
+                            <input type="checkbox" id="chk19" class="form-check-input" value="19:00" style="margin-right: 10px;" data-group="horario" disabled>
+                            <label class="form-check-label" for="chk19">Atendimento das 19:00</label>
+                            <span id="Span19" style="color:red;"></span>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <!-- Checkbox -->
+
+                            </div>
+
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <!-- Simple link
+                                    <a href="#!">Esqueci a senha</a>
+                                -->
+
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="button" id="send-button" class="nav-link active btn btn-primary btn-block" onclick="InserirAgendamentos()">Cadastrar</button>
+
+                        <!-- Register buttons -->
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+
+    flatpickr("#data_agdt", {
+
+        enableTime: false, // Se você quiser incluir a hora, mude para true
+        dateFormat: "d/m/Y" // Formato da data exibida
+
+       
+
+    });
+
+    $(document).ready(function () {
+        // Obtém todos os checkboxes
+        var checkboxes = $('.form-check-input');
+
+        // Adiciona um evento de clique para cada checkbox
+        checkboxes.on('click', function () {
+            // Se este checkbox está sendo marcado
+            if ($(this).is(':checked')) {
+                // Desmarca todos os outros checkboxes
+                checkboxes.not(this).prop('checked', false);
+            }
+        });
+    });
+
+    function InserirAgendamentos() {
+
+        var id = "@usuarioId";
+        var dataC = obterDataHoraFormatada();
+        var data = $("#data_agdt").val();
+        var servico = $("#DropServico").val();
+        var atendimentos = [];
+        if ($("#chk08").prop("checked")) atendimentos.push($("#chk08").val());
+        if ($("#chk10").prop("checked")) atendimentos.push($("#chk10").val());
+        if ($("#chk13").prop("checked")) atendimentos.push($("#chk13").val());
+        if ($("#chk15").prop("checked")) atendimentos.push($("#chk15").val());
+        if ($("#chk17").prop("checked")) atendimentos.push($("#chk17").val());
+        if ($("#chk19").prop("checked")) atendimentos.push($("#chk19").val());
+
+
+        if (!id) {
+            alert("Por favor, Insira aum Id");
+            return;
+        }
+
+        if (!dataC) {
+            alert("Por favor, selecione uma data de cadastro");
+            return;
+        }
+        if (!data) {
+            alert("Por favor, selecione uma data para o agendamento.");
+            return;
+        }
+        if (!servico) {
+            alert("Por favor, selecione o serviço.");
+            return;
+        }
+        if (atendimentos.length === 0) {
+            alert("Por favor, selecione pelo menos um horário para o agendamento.");
+            return; // Retorna da função se nenhum horário foi selecionado
+        }
+        var dados = {
+            id: id,
+            dataC: dataC,
+            data: data,
+            servico: servico,
+            atendimentos: atendimentos
+        };
+        console.log(dados)
+        $.ajax({
+            url: '/Agendamento/InserirAgendamentos',
+            type: "POST",
+            dataType: "json",
+            data: dados,
+            success: function (response) {
+                if (response.success) {
+                    alert("Agendamento(s) cadastrado(s) com sucesso!");
+                    window.location.href = '/Agendamento/IndexCliente'
+                } else {
+                    alert("Erro ao cadastrar agendamento(s).");
+                }
+            },
+            error: function (xhr, textStatus, errorThrown) {
+                alert("Erro ao cadastrar agendamento(s): " + errorThrown);
+            }
+        });
+    }   
+
+    function consultarAgendamento() {
+        ativarCheckboxes()
+        limparTextosSpans()
+        desmarcarCheckboxes()
+
+        var data = $("#data_agdt").val();
+        $.ajax({
+            type: "GET",
+            url: "/Agendamento/ConsultarAgendamento",
+            data: { data: data },
+            success: function (response) {
+
+                response.forEach(function (item) {
+                    console.log(item.horario);
+
+                    switch (item.horario) {
+                        case "08:00:00":
+                            $("#chk08").prop("disabled", true);
+                            $("#Span08").text("Horario Indisponivel");
+                            break;
+                        case "10:00:00":
+                            $("#chk10").prop("disabled", true);
+                            $("#Span10").text("Horario Indisponivel");
+                            break;
+                        case "13:00:00":
+                            $("#chk13").prop("disabled", true);
+                            $("#Span13").text("Horario Indisponivel");
+                            break;
+                        case "15:00:00":
+                            $("#chk15").prop("disabled", true);
+                            $("#Span15").text("Horario Indisponivel");
+                            break;
+                        case "17:00:00":
+                            $("#chk17").prop("disabled", true);
+                            $("#Span17").text("Horario Indisponivel");
+                            break;
+                        case "19:00:00":
+                            $("#chk19").prop("disabled", true);
+                            $("#Span19").text("Horario Indisponivel");
+                            break;
+                        default:
+                            break;
+                    }
+                });
+            },
+            error: function (error) {
+                // Manipule os erros aqui
+                console.error("Erro na requisição AJAX:", error);
+            }
+        });
+    }
+
+    function ativarCheckboxes() {
+        // Desabilita a propriedade disabled dos checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(function (checkbox) {
+            checkbox.disabled = false;
+        });
+    }
+
+    function limparTextosSpans() {
+
+        // Obtém todos os elementos <span> dentro das divs específicas
+        var spans = document.querySelectorAll('.mb-3 span');
+
+        // Itera sobre os spans e define seu conteúdo como vazio
+        spans.forEach(function (span) {
+            span.textContent = '';
+        });
+    }
+
+    function desmarcarCheckboxes() {
+        // Obtém todos os elementos <input type="checkbox"> dentro do formulário
+        var checkboxes = document.querySelectorAll('#InserirAgendamento input[type="checkbox"]');
+
+        // Itera sobre os checkboxes e desmarca todos
+        checkboxes.forEach(function (checkbox) {
+            checkbox.checked = false;
+        });
+    }
+
+    function limparFormulario() {
+        var usuarioId = "@Context.Session.GetString("UsuarioId")";
+        document.getElementById("TxtId").value = usuarioId;
+
+        // Limpar campos de texto
+        document.querySelectorAll('#InserirAgendamento input[type="text"]').forEach(function (input) {
+            input.value = '';
+        });
+
+        // Limpar campos de seleção
+        document.querySelectorAll('#InserirAgendamento select').forEach(function (select) {
+            select.selectedIndex = 0;
+        });
+
+        // Desmarcar checkboxes
+
+        // Limpar spans
+        document.querySelectorAll('#InserirAgendamento span').forEach(function (span) {
+            span.textContent = '';
+        });
+
+        document.querySelectorAll('#InserirAgendamento input[type="checkbox"]').forEach(function (checkbox) {
+            checkbox.checked = false;
+            checkbox.disabled = true;
+        });
+
+    }
+
+    function obterDataHoraFormatada() {
+        // Obtém a data e hora atuais
+        var dataHoraAtual = new Date();
+
+        // Formata a data e hora para o formato desejado (por exemplo, "yyyy-MM-dd HH:mm:ss.fff")
+        var dataHoraFormatada = dataHoraAtual.getFullYear() + "-" +
+            ("0" + (dataHoraAtual.getMonth() + 1)).slice(-2) + "-" +
+            ("0" + dataHoraAtual.getDate()).slice(-2) + " " +
+            ("0" + dataHoraAtual.getHours()).slice(-2) + ":" +
+            ("0" + dataHoraAtual.getMinutes()).slice(-2) + ":" +
+            ("0" + dataHoraAtual.getSeconds()).slice(-2) + "." +
+            ("00" + dataHoraAtual.getMilliseconds()).slice(-3);
+
+        // Retorna a data e hora formatada
+        return dataHoraFormatada;
+    }
+</script>
