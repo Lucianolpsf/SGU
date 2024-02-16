@@ -66,6 +66,20 @@ p {
     color: var(--dark-color);
 }
 
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--orange-color);
+    border-radius: 50px;
+}
+
+input:focus, select:focus{
+    outline: 4px solid var(--darkless-color) !important;
+}
+select option:hover{
+    background-color: var(--darkless-color);
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/

@@ -11,7 +11,7 @@ public partial class Agendamento
 
     public DateTime AgendarData { get; set; }
 
-    public byte Horario { get; set; }
+    public TimeSpan Horario { get; set; }
 
     public int? Satisfacao { get; set; }
 

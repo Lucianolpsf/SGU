@@ -125,6 +125,14 @@
       "PackagePath": "staticwebassets/img/icons/met1.png"
     },
     {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/imgEdt.png",
+      "PackagePath": "staticwebassets/img/imgEdt.png"
+    },
+    {
+      "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/imgExc.png",
+      "PackagePath": "staticwebassets/img/imgExc.png"
+    },
+    {
       "Id": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log1.jpg",
       "PackagePath": "staticwebassets/img/log1.jpg"
     },

@@ -11,7 +11,12 @@
 @media (max-width: 999px) {
   #hero {
       margin-bottom: 0;
-      height: 100vh;
+      /* height: 100vh; */
+      margin-top: 62px;
+      height: 52vh !important;
+      background-repeat: no-repeat;
+      background-size: 798px !important;
+
   }
 
   #hero .container {
@@ -53,4 +58,14 @@
   .contato iframe {
     width: 350px !important;
   }
+
+  .whatsapp-image {
+    position: fixed;
+    right: 0.5em !important;
+    bottom: 2em !important;
+}
+
+.whatsapp-image img {
+    width: 3em !important;
+}
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cnDlKF9OMijHCgTYmz7LaxR+e+3nc9LcR4TSfQRE+HU=",
+  "Hash": "8DPq0kelOS9drCPKQyHVzqCWRNlPZovtJgKwAZRic6A=",
   "Source": "SGU",
   "BasePath": "_content/SGU",
   "Mode": "Default",
@@ -559,6 +559,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/icons/met1.png"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/imgEdt.png",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "img/imgEdt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/imgEdt.png"
+    },
+    {
+      "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/imgExc.png",
+      "SourceId": "SGU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/",
+      "BasePath": "_content/SGU",
+      "RelativePath": "img/imgExc.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/imgExc.png"
     },
     {
       "Identity": "/home/luciano/Documentos/projetos/SGU/SGU/wwwroot/img/log1.jpg",
