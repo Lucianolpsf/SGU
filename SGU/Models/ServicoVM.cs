@@ -10,11 +10,7 @@ namespace SGU.Models
 
         public double? Valor { get; set; }
 
-        public int? FkTipoServicoId { get; set; }
-
         public virtual ICollection<Agendamento> Agendamentos { get; } = new List<Agendamento>();
-
-        public virtual TipoServico? FkTipoServico { get; set; }
 
     }
 }

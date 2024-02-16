@@ -1,0 +1,306 @@
+@model IEnumerable<SGU.Models.ServicoVM>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+<section id="clientes-page-section">
+
+    <div id="client-maneger" class="container"> 
+
+        <div class="add-user-button">
+            <h1 class="section-title cliente-title-maneger">Gerenciamento de Serviços</h1>
+            <br />
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group mb-4">
+                        <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Serviços..." aria-label="Filtrar" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
+                    <button class="btn btn-success btn-lg" onclick="" data-bs-toggle="modal" data-bs-target="#InserirServico">
+                        <i class="fa fa-plus"></i> Adicionar Serviço
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container table-responsive">
+            <table id="TbClientes" class="table">
+                <colgroup>
+                    <col class="tc-nome">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Tecnica</th>
+                        <th>Valor</th>
+                        <th class="editar">Editar</th>
+                        <th class="excluir">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr id="@item.Id">
+                                <td>@item.Id</td>
+                                <td>@item.Tecnica</td>
+                                <td>@item.Valor</td>                            
+                                <td class="text-center">
+                                    <button class="btn btn-default" onclick="definirEdt('@item.Id','@item.Tecnica','@item.Valor')" data-bs-toggle="modal" data-bs-target="#EditarServico">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-default" onclick="definirExc('@item.Id','@item.Tecnica','@item.Valor')" data-bs-toggle="modal" data-bs-target="#ExcluirServico">
+                                        <i class="fa fa-trash text-danger"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="12" class="text-center">Nenhum serviço encontrado.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="InserirServico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input id="txtTecnica" type="text" class="form-control" placeholder="Digite o nome da Tecnica">
+                        </div>
+
+                        <div class="mb-3">
+                            <input id="txtValor" type="text" class="form-control" placeholder="Digite o Preço">
+                        </div>                        
+                        
+                        <input type="hidden" id="IdEdt" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="InserirServico()">Adicionar</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="EditarServico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>                      
+
+                        <div class="mb-3">
+                            <label for="TecnicaEdt">Tecnica</label>
+                            <input id="TecnicaEdt" type="text" class="form-control">
+                        </div>
+                        <div class="mb-TecnicaEdt3">
+                            <label for="ValorEdt">Valor</label>
+                            <input id="ValorEdt" type="text" class="form-control" >
+                        </div>
+                        <input type="hidden" id="IdEdt" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="AlterarServico()">Alterar</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ExcluirServico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="TecnicaExc">Tecnica</label>
+                            <input id="TecnicaExc" type="text" class="form-control">
+                        </div>
+                        <div class="mb-TecnicaEdt3">
+                            <label for="ValorExc">Valor</label>
+                            <input id="ValorExc" type="text" class="form-control">
+                        </div>
+                        <input type="hidden" id="IdExc" value="" />
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="ExcluirServico()">Excluir</button><!--onclick para chamar a funcao de alteração-->
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+
+        function definirEdt(id,Tecnica,Valor) {
+            
+            $('#IdEdt').val(id);
+            $('#TecnicaEdt').val(Tecnica);
+            $('#ValorEdt').val(Valor);                 
+        }
+
+        function definirExc(id,Tecnica,Valor) {
+
+            $('#IdExc').val(id);
+            $('#TecnicaExc').val(Tecnica);
+            $('#ValorExc').val(Valor);
+        }
+
+        function InserirServico() {
+
+            var tecnica = $('#txtTecnica').val();
+            var valor = $('#txtValor').val();
+
+            // Validar os campos
+            if (!tecnica) {
+                alert("Por favor, preencha o campo Técnica.");
+                return;
+            }
+
+            if (!valor) {
+                alert("Por favor, preencha o campo Valor.");
+                return;
+            }
+
+            var dados = {
+                tecnica: tecnica,
+                valor: valor
+            };
+
+            // Faça a chamada AJAX
+            $.ajax({
+                url: '/Servico/InserirServico',
+                type: "POST",
+                dataType: "json",
+                data: dados,
+                success: function (resultado) {
+                    if (resultado.success) {
+                        alert(resultado.message);  // Exibe a mensagem de sucesso
+                        // Fecha o modal
+                        $('#InserirServico').modal('hide');
+                        // Recarrega a págInserirUsuarioina
+                        location.reload();
+                    } else {
+                        alert(resultado.message);  // Exibe a mensagem de falha
+                    }
+                },
+                error: function () {
+                    alert('Erro na requisição AJAX.');
+                }
+            });
+        }
+
+        function AlterarServico() {
+                      
+            var id = $("#IdEdt").val();
+            var tecnica = $('#TecnicaEdt').val();
+            var valor = $('#ValorEdt').val();
+
+            if (!tecnica) {
+                alert("Por favor, preencha o campo Técnica.");
+                return;
+            }
+
+            if (!valor) {
+                alert("Por favor, preencha o campo Valor.");
+                return;
+            }
+
+            var dados = {
+               id: id,
+               tecnica: tecnica,
+               valor: valor
+            };           
+            $.ajax({
+                type: "POST",
+                url: "/Servico/AlterarServico", 
+                dataType: "json",
+                data: dados,
+                success: function (response) {
+                   
+                    if (response.success) {
+                        alert("Serviço alterado com sucesso!");
+                        $('#EditarServico').modal('hide');                        
+                        location.reload();
+                    } else {
+                        alert("Falha ao alterar Serviço.");
+                    }
+                },
+                error: function (error) {
+                    
+                    console.error("Erro na chamada AJAX:", error);
+                }
+            });
+        }
+
+        function ExcluirServico() 
+        {
+            // Obtenha o ID do usuário a ser excluído
+            var userId = $('#IdExc').val();
+
+           
+            $.ajax({
+                type: "POST",
+                url: "/Servico/ExcluirServico", 
+                data: { id: userId },
+                dataType: "json",
+                success: function (response) {
+                   
+                    if (response.success) {
+                        
+                        $('#ExcluirServico').modal('hide');
+                        alert("Serviço excluido com sucesso!");
+
+                        // Recarregue a página
+                        location.reload();
+                    } else {
+                        alert("Falha ao excluir serviço.");
+                    }
+                },
+                error: function () {
+                    alert("Erro na requisição AJAX.");
+                }
+            });
+        }
+
+
+    </script>
+
+</section>

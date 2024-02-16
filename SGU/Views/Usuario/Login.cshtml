@@ -71,10 +71,14 @@
                         </div>
 
                         <!-- Password input -->
-                        <div class="form-outline mb-4">
-                            <input type="password" id="loginPassword" class="form-control" required placeholder="Digite sua senha" />
 
+                        <div class="mb-3">
+                            <input id="loginPassword" type="password" class="form-control" placeholder="Digite a senha">
+                            <span id="show-hide-password" class="input-group-text">
+                                <i class="fa fa-eye-slash"></i>
+                            </span>
                         </div>
+                        
 
                         <!-- 2 column grid layout -->
                         <div class="row mb-4">
@@ -107,7 +111,21 @@
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
+    $(document).ready(function () {
+        $('#show-hide-password').click(function () {
+            var senhaInput = $('#loginPassword');
+            var tipoInput = senhaInput.attr('type');
 
+            // Alternar entre o tipo de input password e text
+            if (tipoInput === 'password') {
+                senhaInput.attr('type', 'text');
+                $('#show-hide-password i').removeClass('fa-eye-slash').addClass('fa-eye');
+            } else {
+                senhaInput.attr('type', 'password');
+                $('#show-hide-password i').removeClass('fa-eye').addClass('fa-eye-slash');
+            }
+        });
+    });
     function ConsultaLogin() {
         var email = $("#loginEmail").val();
         var senha = $("#loginPassword").val();

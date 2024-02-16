@@ -4,8 +4,7 @@
 
 
 <section id="clientes-page-section">
-    <div id="client-maneger" class="container">        
-
+    <div id="client-maneger" class="container"> 
 
         <div class="add-user-button">
             <h1 class="section-title cliente-title-maneger">Gerenciamento de Clientes</h1>
@@ -70,6 +69,7 @@
                 </tbody>
             </table>
         </div>
+
     </div>
 
     <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -81,26 +81,50 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="mb-3">
-                            <label for="nome">Nome</label>
-                            <input id="EditNome" type="text" class="form-control"> <!--Campo somente de leitura com o readonly-->
+                        <p style="color:red">Campos com * vermelho são obrigatórios</p>
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditNome" type="text" class="form-control" placeholder="Digite o nome do cliente">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:red">*</label>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="nome">Senha</label>
-                            <input id="EditSenha" type="text" class="form-control"> <!--Campo somente de leitura com o readonly-->
-                        </div>
-                        <div class="mb-3">
-                            <label for="email">Email</label>
-                            <input id="EditEmail" type="email" class="form-control" >
-                        </div>
-                        <div class="mb-3">
-                            <label for="email">Tipo de Cliente</label>
-                            @Html.DropDownList("DropTipoUsuarioEdit", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "chosen-select form-control", @style = "width:420px;" })
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefone">Telefone</label>
-                            <input id="EditTel" type="text" class="form-control" >
 
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditSenha" type="text" class="form-control" placeholder="Digite o a senha">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:red">*</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <div class="col-md-7">
+                                <input id="EditEmail" type="email" class="form-control" placeholder="Digite o email">
+                            </div>
+                            <div class="col-md-5">
+                                <label style="color:red">*</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 row">
+                            <div class="col-md-6">
+                                @Html.DropDownList("DropTipoUsuarioEdit", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "chosen-select form-control", @style = "width:230px;" })
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:red">*</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="EditTel" type="text" class="form-control" placeholder="Digite o telefone">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:red">*</label>
+                            </div>
                         </div>
                         <input type="hidden" id="IdEdt" value="" />
 
@@ -108,7 +132,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary" onclick=" AlterarUsuario()">Salvar</button><!--onclick para chamar a funcao de alteração-->
+                    <button type="button" class="btn btn-primary" onclick=" AlterarUsuario()">Salvar</button>
                 </div>
             </div>
         </div>
@@ -155,30 +179,59 @@
     <div class="modal fade" id="InserirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
+                
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h5>                     
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="mb-3">
-                           <input id="Nome" type="text" class="form-control" placeholder="Digite o nome do cliente"> 
+                        <p style="color:red">Campos com * vermelho são obrigatórios</p>
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="Nome" type="text" class="form-control" placeholder="Digite o nome do cliente">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:red">*</label>
+                            </div>
                         </div>
 
-                        <div class="mb-3">                            
-                            <input id="Senha" type="text" class="form-control" placeholder="Digite o a senha"> 
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="Senha" type="text" class="form-control" placeholder="Digite o a senha">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:red">*</label>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <input id="Email" type="email" class="form-control" placeholder="Digite o email">
-                        </div>
-                        <div class="mb-3">
-                           @Html.DropDownList("DropTipoUsuario", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "chosen-select form-control", @style = "width:420px;" })
 
+                        <div class="mb-3 row">
+                            <div class="col-md-7">
+                                <input id="Email" type="email" class="form-control" placeholder="Digite o email">
+                            </div>
+                            <div class="col-md-5">
+                                <label style="color:red">*</label>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <input id="Telefone" type="text" class="form-control" placeholder="Digite o telefone">
 
+                        <div class="mb-4 row">
+                            <div class="col-md-6">
+                                @Html.DropDownList("DropTipoUsuario", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "chosen-select form-control", @style = "width:230px;" })
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:red">*</label>
+                            </div>
                         </div>
+
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <input id="Telefone" type="text" class="form-control" placeholder="Digite o telefone">
+                            </div>
+                            <div class="col-md-6">
+                                <label style="color:red">*</label>
+                            </div>
+                        </div>
+
                         <input type="hidden" id="IdEdt" value="" />
 
                     </form>
@@ -204,21 +257,19 @@
             $('#EditEmail').val(Email);
             $('#EditTel').val(Telefone);
 
-            // Verifica se o campo Senha existe e está sendo preenchido corretamente
+           
             var senhaValue = "";
             if (Senha) {
                 $('#EditSenha').val(Senha);
                 senhaValue = Senha;
             }
 
-            // Verifica se o DropDownList existe e se o valor está presente nas opções
-            // Verifica se o DropDownList existe e se o valor está presente nas opções
-            if ($('#DropTipoUsuarioEdit').length > 0) {
-                // Procura a opção no DropDownList pelo texto
+           
+            if ($('#DropTipoUsuarioEdit').length > 0) {               
                 $('#DropTipoUsuarioEdit option').filter(function () {
-                    return $(this).text() === TipoUsuario; // Verifica se o texto corresponde ao TipoUsuario
-                }).prop('selected', true); // Seleciona a opção encontrada
-                $('#DropTipoUsuarioEdit').trigger('chosen:updated'); // Atualiza o DropDownList
+                    return $(this).text() === TipoUsuario; 
+                }).prop('selected', true); 
+                $('#DropTipoUsuarioEdit').trigger('chosen:updated');
             } else {
                 console.error("DropDownList não encontrado.");
             }           
@@ -238,6 +289,31 @@
             var senha = $('#Senha').val();
             var telefone = $('#Telefone').val();
             var tipoUsuario = $('#DropTipoUsuario option:selected').text();
+            
+            if (nome.trim() === "") {
+                alert("Por favor, preencha o campo Nome.");
+                return;
+            }
+            if (senha.trim() === "") {
+                alert("Por favor, preencha o campo Senha.");
+                return;
+            }
+            if (email.trim() === "") {
+                alert("Por favor, insira um email válido.");
+                return;
+            }
+
+            if (tipoUsuario === "Escolha o Tipo de Usuário") {
+                alert("Por favor, selecione o tipo de usuário.");
+                return;
+            }
+
+            if (telefone.trim() === "") {
+                alert("Por favor, insira um número de telefone válido.");
+                return;
+            }            
+
+            
 
             var dados = {
                 Nome: nome,
@@ -271,17 +347,40 @@
         }
 
         function AlterarUsuario() {
-                      
             var id = $("#IdEdt").val();
             var nome = $("#EditNome").val();
             var senha = $("#EditSenha").val();
             var email = $("#EditEmail").val();
             var tel = $('#EditTel').val();
-            var tipoCli = $('#DropTipoUsuarioEdit option:selected').text();
+            var tipoCli = $('#DropTipoUsuarioEdit').val(); // Obtém o valor do tipo de cliente, não apenas o texto
 
-           
-            if (!id || !senha || !nome || !email || !tel || !tipoCli) {
-                alert("Por favor, preencha todos os campos.");
+            // Validação do campo 'Nome'
+            if (!nome) {
+                alert("Por favor, preencha o campo Nome.");
+                return;
+            }
+
+            // Validação do campo 'Senha'
+            if (!senha) {
+                alert("Por favor, preencha o campo Senha.");
+                return;
+            }
+
+            // Validação do campo 'Email'
+            if (!email) {
+                alert("Por favor, preencha o campo Email.");
+                return;
+            }
+
+            // Validação do campo 'Telefone'
+            if (!tel) {
+                alert("Por favor, preencha o campo Telefone.");
+                return;
+            }
+
+            // Validação do campo 'Tipo de Cliente'
+            if (!tipoCli) {
+                alert("Por favor, selecione o Tipo de Cliente.");
                 return;
             }
 
@@ -298,7 +397,7 @@
             // Faça a chamada AJAX para o servidor
             $.ajax({
                 type: "POST",
-                url: "/Usuario/AlterarUsuario", // Substitua "Cliente" pelo nome do seu controller
+                url: "/Usuario/AlterarUsuario",
                 contentType: "application/json; charset=utf-8",
                 data: JSON.stringify(dados),
                 success: function (response) {
@@ -349,7 +448,8 @@
                 }
             });
         }
-
+        
+       
 
     </script>
 

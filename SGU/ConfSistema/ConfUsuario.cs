@@ -11,7 +11,6 @@ namespace SGU.ConfSistema
         {
             _context = context;
         }
-
         public Usuario ConsultarUsuario(string email, string senha)
         {
             try
@@ -96,7 +95,6 @@ namespace SGU.ConfSistema
                 return resultado;
             }
         }
-
         public bool AlterarUsuario(int Id, string Nome, string Senha,  string Email, string Telefone, string tipoUsuario)
         {
 
@@ -127,7 +125,6 @@ namespace SGU.ConfSistema
                 return false;
             }
         }
-
         public bool ExcluirUsuario(int id)
         {
             try
@@ -150,7 +147,6 @@ namespace SGU.ConfSistema
                 return false;
             }
         }
-
         private bool EmailJaExiste(string email)
         {
             // Verificar se há algum usuário com o mesmo e-mail no banco
