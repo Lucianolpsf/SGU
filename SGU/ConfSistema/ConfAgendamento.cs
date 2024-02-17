@@ -37,7 +37,7 @@ namespace SGU.ConfSistema
                         LstVM.Tecnica = item.Tecnica;
                         LstVM.Valor = item.Valor;
                         LstVM.Confirmacao = item.Confirmacao;
-                        LstVM.Satisfacao = item.Satisfacao;
+                        
                     }
 
                     ListaAgendamento.Add(LstVM);
@@ -73,7 +73,7 @@ namespace SGU.ConfSistema
                         LstVM.Tecnica = item.Tecnica;
                         LstVM.Valor = item.Valor;
                         LstVM.Confirmacao = item.Confirmacao;
-                        LstVM.Satisfacao = item.Satisfacao;
+                        
                     }
 
                     ListaAgendamento.Add(LstVM);
@@ -132,7 +132,7 @@ namespace SGU.ConfSistema
                 return ListaAgendamento;
             }
         }
-        public bool InserirAgendamento(int id, string dataC, string data, int servico, TimeSpan atendimento)
+        public bool InserirAgendamento(int id, string dataC, string data, int servico, DateTime atendimento)
         {
             try
             { 
@@ -202,7 +202,7 @@ namespace SGU.ConfSistema
                     }
                     if (horario != null) 
                     {
-                        agt.Horario = TimeSpan.Parse(horario);
+                        agt.Horario = DateTime.Parse(horario);
                     }
                    agt.FkServicoId = servico;
                    _context.SaveChanges();

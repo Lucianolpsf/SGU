@@ -56,7 +56,7 @@ namespace SGU.ConfSistema
                 return null;
             }
         }
-        public OperacaoResultado InserirUsuario(string nome, string email, string senha, string telefone, string tipoUsuario)
+        public OperacaoResultado InserirUsuario(string nome, string email, string senha, string telefone, bool tipoUsuario)
         {
             OperacaoResultado resultado = new OperacaoResultado();
 
@@ -95,7 +95,7 @@ namespace SGU.ConfSistema
                 return resultado;
             }
         }
-        public bool AlterarUsuario(int Id, string Nome, string Senha,  string Email, string Telefone, string tipoUsuario)
+        public bool AlterarUsuario(int Id, string Nome, string Senha,  string Email, string Telefone, bool tipoUsuario)
         {
 
             try

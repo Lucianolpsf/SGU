@@ -11,15 +11,13 @@ public partial class Agendamento
 
     public DateTime AgendarData { get; set; }
 
-    public TimeSpan Horario { get; set; }
-
-    public int? Satisfacao { get; set; }
-
     public bool? Confirmacao { get; set; }
 
     public int? FkUsuarioId { get; set; }
 
     public int? FkServicoId { get; set; }
+
+    public DateTime Horario { get; set; }
 
     public virtual Servico? FkServico { get; set; }
 

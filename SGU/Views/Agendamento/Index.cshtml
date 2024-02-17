@@ -133,7 +133,7 @@
                         <th>Tecnica</th>
                         <th>Valor</th>
                         <th>Confirmação</th>
-                        <th>Satisfação</th>
+                        
                         <th style="color: blue; text-align: center;">Editar</th>
                         <th style="color: red; text-align: center;">Excluir</th>
                     </tr>
@@ -153,15 +153,15 @@
                             <td>@item.Tecnica</td>
                             <td>@item.Valor</td>              
                             <td>@item.Confirmacao</td>
-                            <td>@item.Satisfacao</td>
+                            
                             <td class="text-center">
-                                <button class="btn btn-default" onclick="definirEdt('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone', '@item.AgendarData', '@item.Horario', '@item.Tecnica', '@item.Valor', '@item.Confirmacao', '@item.Satisfacao');" data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
+                                <button class="btn btn-default" onclick="definirEdt('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone', '@item.AgendarData', '@item.Horario', '@item.Tecnica', '@item.Valor', '@item.Confirmacao');" data-bs-toggle="modal" data-bs-target="#EditarAgendamento">
                                     <i class="fa fa-edit"></i>
                                 </button>
                             </td>
                             <td class="text-center">
                                 
-                                <button class="btn btn-default" onclick="definirExc('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone', '@item.AgendarData', '@item.Horario', '@item.Tecnica', '@item.Valor', '@item.Confirmacao', '@item.Satisfacao')" data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
+                                <button class="btn btn-default" onclick="definirExc('@item.Id', '@item.Nome', '@item.Email', '@item.Telefone', '@item.AgendarData', '@item.Horario', '@item.Tecnica', '@item.Valor', '@item.Confirmacao')" data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
                                     <i class="fa fa-trash text-danger"></i>
                                 </button>
 
@@ -230,11 +230,7 @@
                             <input type="text" id="ExcConf" class="form-control"  readonly>
 
                         </div>
-                        <div class="mb-3">
-                            <label for="telefone">Satisfação</label>
-                            <input type="text" id="ExcSat" class="form-control"  readonly>
-
-                        </div>
+                        
                         <input type="hidden" id="IdExc" class="form-control"  readonly>
 
                     </form>
@@ -363,10 +359,7 @@
                         <div class="mb-3">
                             <label for="telefone">Confirmação</label>
                             <input type="text" id="EdtConf" class="form-control" readonly>                        </div>
-                        <div class="mb-3">
-                            <label for="telefone">Satisfação</label>
-                            <input type="text" id="EdtSat" class="form-control" readonly>
-                        </div>
+                      
                         <div class="mb-3">
                             <div class="mb-3 d-flex align-items-center">
                                 <br />
@@ -455,7 +448,7 @@
             });
         }
 
-        function definirExc(id, Nome, Email, Telefone, Data, Horario, Tecnica, Val, Conf, Sat) {
+        function definirExc(id, Nome, Email, Telefone, Data, Horario, Tecnica, Val, Conf) {
           
             $('#IdExc').val(id);
             $('#ExcNome').val(Nome);
@@ -466,11 +459,11 @@
             $('#ExcTecnica').val(Tecnica)
             $('#ExcVal').val(Val)
             $('#ExcConf').val(Conf)
-            $('#ExcSat').val(Sat)
+         
 
         }
 
-        function definirEdt(id, Nome, Email, Telefone,Data, Horario, Tecnica, Val, Conf, Sat) {          
+        function definirEdt(id, Nome, Email, Telefone,Data, Horario, Tecnica, Val, Conf) {          
             
             $('#IdEdt').val(id);
             $('#EdtNome').val(Nome);
@@ -480,7 +473,7 @@
             $('#EdtHorario').val(Horario);
             $('#EdtVal').val(Val);
             $('#EdtConf').val(Conf);
-            $('#EdtSat').val(Sat);     
+                
             $('#DropServicoEdt option').each(function () {
                 if ($(this).text() === Tecnica) {
                     $(this).prop('selected', true);

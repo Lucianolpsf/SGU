@@ -21,8 +21,8 @@ namespace SGC.ConfProjeto
         {
             List<SelectListItem> tipoUsuario = new List<SelectListItem>
             {
-                new SelectListItem { Value = "1", Text = "administrador" },
-                new SelectListItem { Value = "2", Text = "cliente" },
+                new SelectListItem { Value = "false", Text = "Administrador" },
+                new SelectListItem { Value = "true", Text = "Cliente" },
            
             // Adicione mais itens conforme necessário
             };
@@ -54,7 +54,7 @@ namespace SGC.ConfProjeto
                     HttpContext.Session.SetString("UsuarioId", usuario.Id.ToString());
                     HttpContext.Session.SetString("UsuarioNome", usuario.Nome);
                     HttpContext.Session.SetString("UsuarioEmail", usuario.Email);
-                    HttpContext.Session.SetString("UsuarioTipo", usuario.TipoUsuario);
+                    HttpContext.Session.SetBool("UsuarioTipo", usuario.TipoUsuario);
 
                     return Json(new { success = true });
                 }
@@ -70,7 +70,7 @@ namespace SGC.ConfProjeto
                 return Json(new { success = false, message = "Erro ao consultar usuário." });
             }
         }
-        public IActionResult InserirUsuario(string Nome, string Senha, string Email, string Telefone, string TipoUsuario)
+        public IActionResult InserirUsuario(string Nome, string Senha, string Email, string Telefone, bool TipoUsuario)
         {
             try
             {

@@ -15,15 +15,13 @@ public partial class ViewAgendamento
 
     public DateTime AgendarData { get; set; }
 
-    public TimeSpan Horario { get; set; }
+    public DateTime Horario { get; set; }
 
     public string? Tecnica { get; set; }
 
     public double? Valor { get; set; }
 
     public bool? Confirmacao { get; set; }
-
-    public int? Satisfacao { get; set; }
 
     public int Expr1 { get; set; }
 }

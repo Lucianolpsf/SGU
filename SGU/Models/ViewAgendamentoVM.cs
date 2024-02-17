@@ -14,7 +14,7 @@ namespace SGU.Models
            
         public DateTime AgendarData { get; set; }
 
-        public TimeSpan Horario { get; set; }
+        public DateTime Horario { get; set; }
 
         public string? Tecnica { get; set; }
 
@@ -22,7 +22,7 @@ namespace SGU.Models
 
         public bool? Confirmacao { get; set; }
 
-        public int? Satisfacao { get; set; }
+        
 
     }
 }

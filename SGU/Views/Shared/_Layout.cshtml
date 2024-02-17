@@ -56,22 +56,29 @@
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             Fale Conosco</a>
                     </li>
-                   
+                    @{
+                        bool isUsuarioAutenticado = !string.IsNullOrEmpty(Context.Session.GetString("UsuarioNome"));
+                        string usuarioNome = Context.Session.GetString("UsuarioNome");
+                    }
                     
-                    @if (Context.Session.GetString("UsuarioTipo") == "administrador" ||
-                    Context.Session.GetString("UsuarioTipo") ==
-                    "cliente")
+                    @if (isUsuarioAutenticado)
                     {
                         <!-- Se o usuário estiver autenticado, exibe o dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle user-loged" href="#" id="usuarioDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                @Context.Session.GetString("UsuarioNome")
+                               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @usuarioNome
                             </a>
                             <div class="dropdown-menu" aria-labelledby="usuarioDropdown">
-                              
-                                @if (Context.Session.GetString("UsuarioTipo") == "administrador")
+                                @if (Context.Session.GetBool("UsuarioTipo"))
                                 {
+                                    <!-- Exibe o link de Agendamento se o tipo de usuário for 'true' -->
+                                    <a class="nav-item" href="/Agendamento/Index">Agendamento</a>
+                                }
+                                else
+                                {
+                                    <!-- Exibe as opções "Agendamento" e "Clientes" se o tipo de usuário for 'false' -->
+
                                     <a class="nav-itemb clientes" href="/Usuario/Index">
                                         <i class="fa fa-users" aria-hidden="true"></i>
                                         Clientes(s)
@@ -82,29 +89,23 @@
                                     </a>
                                     <a href="/Servico/Index" class="nav-item clientes">
                                         <i class="fa fa-gavel" aria-hidden="true"></i>
-                                    Serviço(s)</a>
+                                        Serviço(s)
+                                    </a>
                                     <a href="/Manutencao/Index" class="nav-item clientes">
                                         <i class="fa fa-wrench" aria-hidden="true"></i>
-                                    Manutenção</a>
+                                        Manutenção
+                                    </a>
                                     <a href="/Agendamento/Index" class="nav-item clientes">
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    Relatorio(s)</a>
+                                        Relatorio(s)
+                                    </a>
                                     <a href="/Agendamento/Index" class="nav-item clientes">
                                         <i class="fa fa-signal" aria-hidden="true"></i>
-                                    DashBord</a>
-                                }
-                                @if (Context.Session.GetString("UsuarioTipo") == "cliente")
-                                {
+                                        DashBord
+                                    </a>
 
-                                    <a href="/Agendamento/IndexCliente" class="nav-item clientes">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    Agendamento(s)</a>
-                          
                                 }
-                                    <a class="nav-item" .sair" href="/Usuario/Logout" onclick="fazerLogout()">
-                                    <i class="fa fa-user-times" aria-hidden="true"></i>
-                                    Sair</a>
-
+                                <a class="nav-item sair" href="/Usuario/Logout" onclick="fazerLogout()">Sair</a>
                             </div>
                         </li>
                     }
@@ -112,9 +113,7 @@
                     {
                         <!-- Se o usuário não estiver autenticado, exibe o link de login -->
                         <li class="nav-item">
-                            <a href="/Usuario/Login">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                Login</a>
+                            <a href="/Usuario/Login">Login</a>
                         </li>
                     }
 
@@ -166,3 +165,5 @@
 </body>
 
 </html>
+
+

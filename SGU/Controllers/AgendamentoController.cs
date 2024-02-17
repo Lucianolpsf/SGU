@@ -106,7 +106,7 @@ namespace SGC.ConfProjeto
 
             foreach (var atendimento in atendimentos)
             {
-                var rs = agdt.InserirAgendamento(id, dataC, data, servico, TimeSpan.Parse(atendimento));
+                var rs = agdt.InserirAgendamento(id, dataC, data, servico, DateTime.Parse(atendimento));
                 if (!rs)
                 {
                     return Json(new { success = false });

@@ -124,7 +124,7 @@
         var email = $('#loginEmail').val();
         var senha = $('#loginPassword').val();
         var telefone = $('#loginTelefone').val();
-        var tipoUsuario = "Funcionario"
+        var tipoUsuario = true;
 
         // Crie um objeto de usuário para enviar
         var dados = {
@@ -132,7 +132,7 @@
             Email: email,
             Senha: senha,
             Telefone: telefone,
-            TipoUsuario: tipoUsuario
+            TipoUsuario: tipoUsuario ? true : false
         };
 
         // Faça a chamada AJAX

@@ -12,6 +12,6 @@
 
         public string Telefone { get; set; } = null!;
 
-        public string? TipoUsuario { get; set; }
+        public bool TipoUsuario { get; set; }
     }
 }
