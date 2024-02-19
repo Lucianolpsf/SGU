@@ -12,10 +12,10 @@
   #hero {
       margin-bottom: 0;
       /* height: 100vh; */
-      margin-top: 62px;
+      margin-top: 40px;
       height: 52vh !important;
       background-repeat: no-repeat;
-      background-size: 798px !important;
+      /* background-size: 798px !important; */
 
   }
 

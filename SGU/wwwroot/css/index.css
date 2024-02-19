@@ -47,14 +47,11 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6,
+.bem-vindo{
     color: var(--darkiest-color) !important;
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
-}
-
-.bem-vindo{
-    font-family: 'Dancing Script', cursive;
 }
 
 a {
@@ -84,19 +81,19 @@ select option:hover{
 # Sections General
 --------------------------------------------------------------*/
 section {
-    padding: 60px 0;
+    padding: 3.5em 0 2em 0;
     overflow: hidden;
 }
 
 .section-title {
     text-align: center;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .section-title h2 {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding-bottom: 20px;
     position: relative;
     color: var(--darkiest-color);
@@ -143,4 +140,30 @@ section {
 footer {
     max-height: 85px;
     padding-top: .8em;
+}
+
+/*
+Gerencimanto general
+*/
+
+main:has(.page-maneger){
+    background-image: 
+    linear-gradient(to bottom, 
+    var(--orange-color), 
+    var(--orange2-color),
+    var(--light-pink),
+    var(--dark-pink)) !important;
+}
+
+.maneger-page-section{
+    padding: 1em;
+}
+
+.page-maneger{
+    background-color: var(--white-color);
+    margin-top: 2.5em;
+    border-radius: 8px;
+    box-shadow: 2px 0 10px -2px var(--darkiest-color);
+    height: 590px;
+    overflow: hidden;
 }

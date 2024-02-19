@@ -2,7 +2,7 @@
 # About
 --------------------------------------------------------------*/
   .about .icon-box {
-    margin-top: 40px;
+    margin-top: 2em;
   }
   
   .about .icon-box .icon {
@@ -66,6 +66,6 @@
     height: 550px;
     width: auto;
     position: absolute;
-    bottom: 70px;
+    bottom: -32px;
     right: 0;
   }

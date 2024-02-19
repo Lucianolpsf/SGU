@@ -1,25 +1,3 @@
-main:has(#client-maneger){
-    background-image: 
-    linear-gradient(to bottom, 
-    var(--orange-color), 
-    var(--orange2-color),
-    var(--light-pink),
-    var(--dark-pink)) !important;
-}
-
-#clientes-page-section{
-    padding: 1em;
-}
-
-#client-maneger{
-    background-color: var(--white-color);
-    margin-top: 5em;
-    border-radius: 8px;
-    box-shadow: 2px 0 10px -2px var(--darkiest-color);
-    height: 680px;
-    overflow: hidden;
-}
-
 .cliente-title-maneger{
     padding: 20px; 
     max-height:20px;
@@ -65,7 +43,7 @@ main:has(#client-maneger){
 }
 
 .table-container {
-    max-height: 520px;
+    max-height: 445px;
     overflow-y: auto;
 }
 

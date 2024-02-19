@@ -218,6 +218,32 @@
       },
 
       1200: {
+        slidesPerView: 5,
+        spaceBetween: 20
+      }
+    }
+  });
+
+  new Swiper('.testimonials-slider-comments', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
         slidesPerView: 2,
         spaceBetween: 20
       }
